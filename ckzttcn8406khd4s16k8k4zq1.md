@@ -228,3 +228,8 @@ Implementation of the distance metric's discussed in this article.
 ### Conclusion
 
 Manhattan distance is usually preferred over the more common Euclidean distance when there is high dimensionality in the data. Hamming distance is used to measure the distance between categorical variables
+
+### Interview Questions
+1. When to use Euclidean Distance ?
+2. What is called as  City Block Distance ?
+3. In Minkowski, when the degree is one, its similar to which algorithm ?
