@@ -146,3 +146,10 @@ if we are trying to substitute degree = 20, then we can see the line is connecti
 ### Conclusion
 
 Polynomial regression is a simple yet powerful tool for predictive analytics. It allows you to consider non-linear relations between variables and reach conclusions that can be estimated with high accuracy. This type of regression can help you predict disease spread rate, calculate fair compensation, or implement a preventative road safety regulation software.
+
+### Interview Questions
+1. Can linear regression be used for representing quadratic equations? 
+2. What are the problems of Polynomial Regression.
+3. Will overfitting occurs in polynomial regression. 
+4. What happens when the degree is getting increased to a greater value. 
+5. What is the loss function of polynomial regression ?
