@@ -127,4 +127,12 @@ Dimensionality reduction is an important technique to overcome the curse of dime
 
 We will see more about dimensionality reduction in upcoming articles.
 
-
+### Interview Questions
+1. What is the Curse of Dimensionality?
+2. What is the Curse of Dimensionality and how can Unsupervised Learning help with it? 
+3. Why is data more sparse in a high-dimensional space?
+4. How does the Curse of Dimensionality affect Machine Learning models?
+5.  How does High Dimensionality affect Distance-Based Mining Applications?
+6. Does kNN suffer from the Curse of Dimensionality and if it why?
+7. How does the Curse of Dimensionality affect k-Means Clustering?
+ 
