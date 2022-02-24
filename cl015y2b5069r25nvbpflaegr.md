@@ -8,7 +8,7 @@ The problem of missing value is quite common in many real-life datasets. Missing
 
 ### Dataset and Notebook
 
-in this article we are going to use the ["Titanic"](https://github.com/syedjafer/datasets/blob/main/titanic.csv) dataset to explore. Please checkout this colab notebook which covers all the functions done here. 
+in this article we are going to use the ["Titanic"](https://github.com/syedjafer/datasets/blob/main/titanic.csv) dataset to explore. Please checkout this colab [notebook](https://colab.research.google.com/drive/1v-5l5Q8hRATkSllQ_PeS33CdePG_fEKA?usp=sharing) which covers all the functions done here. 
 
 ### What is a Missing Value?
 Missing data is defined as the values or data that is not stored (or not present) for some variable/s in the given dataset. Below is a sample of the missing data from the Titanic dataset. You can see the columns ‘Age’ and ‘Cabin’ have some missing values.
@@ -50,7 +50,7 @@ In the case of MCAR, the data could be missing due to human error, some system/e
 For Example, suppose in a library there are some overdue books. Some values of overdue books in the computer system are missing. The reason might be a human error like the librarian forgot to type in the values. So, the missing values of overdue books are not related to any other variable/data in the system.
 It should not be assumed as it’s a rare case. The advantage of such data is that the statistical analysis remains unbiased.
 
-##### 2. Missing At Random (MAR)
+#### 2. Missing At Random (MAR)
 
 Missing at random (MAR) means that the reason for missing values can be explained by variables on which you have complete information as there is some relationship between the missing data and other values/data.
 
