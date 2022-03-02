@@ -2,7 +2,7 @@
 
 ### Prerequisite
 
-**Variance:** Variance tells us about the **spread of the data**.  It tells us how far the points are from the mean. Its the square of the difference between each data point with the mean of the data points. 
+**Variance:** Variance tells us about the **spread of the data**.  It tells us how far the points are from the mean. Its the average square of the difference between each data point with the mean of the data points. 
 
 
 ![linear_regression_naive_1.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646185728800/N-2Gz8gZg.png)
@@ -11,8 +11,8 @@ From the above image, we can see that variance is the difference between blue po
 
 Formula to calculate the Variance is , 
 
-![Screenshot from 2022-03-02 07-20-21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646185844592/nUWiJ1jXk.png)
 
+![Screenshot from 2022-03-02 08-29-11.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646190089193/mWoF96Luj.png)
 
 
 ### Introduction
