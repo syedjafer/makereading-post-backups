@@ -8,11 +8,11 @@ In the previous article, [Variance and Low variance filter](https://blog.learnml
 In this article, we are going to use the titanic dataset itself, with some imputed values. (Check out this notebook for reference ).
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279383310/UJREnYq6O.png)
+![titanic dataset for high correlation filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279383310/UJREnYq6O.png)
 
-> Notebook : https://colab.research.google.com/drive/1h7FbL7xrHXyhNY_n5nlNjU-4nRcHhS2t#scrollTo=QYOsfz4O2kSH
+> Notebook: https://colab.research.google.com/drive/1h7FbL7xrHXyhNY_n5nlNjU-4nRcHhS2t#scrollTo=QYOsfz4O2kSH
 
-### What  is a High Correlation Filter?
+### What is a High Correlation Filter?
 
 A high correlation between two variables means they have similar trends and are likely to carry similar information. This can bring down the performance of some models drastically (linear and logistic regression models, for instance).
 
@@ -31,7 +31,7 @@ data = pd.read_csv("https://raw.githubusercontent.com/syedjafer/datasets/main/ti
 data.head()
 ```
 
-![Screenshot from 2022-03-03 09-23-25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279646982/_9AnXWAhu.png)
+![Titanic Dataset - High Correlation filter, dimensionality reduction](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279646982/_9AnXWAhu.png)
 
 Now we can calculate correlation between different variables, 
 
@@ -40,12 +40,12 @@ data.corr()
 ```
 
 
-![Screenshot from 2022-03-03 09-25-10.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279723627/MLob_i55o.png)
+![correlation of the titanic dataset - high correlation filter - dimensionality reduction](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279723627/MLob_i55o.png)
 
 we can try to visualize using seaborn, 
 
 
-![Screenshot from 2022-03-03 09-25-45.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279757101/qO3ZpnyT7.png)
+![sns heat map correlation of the titanic dataset - high correlation filter - dimensionality reduction](https://cdn.hashnode.com/res/hashnode/image/upload/v1646279757101/qO3ZpnyT7.png)
 
 from the above, we can see the variables Parch and SibSp are having greater correlation so we can remove any one of them. 
 
@@ -55,7 +55,7 @@ Here were are removing the variable Parch.
 data.drop(axis=1, columns=["Parch"])
 ```
 
-![Screenshot from 2022-03-03 09-31-00.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646280073378/_uUv4eWRs.png)
+![pandas data dropping parch from titanic dataset - high correlation filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646280073378/_uUv4eWRs.png)
 
 Now we have reduced one variable, thus reduced one dimension of the data. 
 
