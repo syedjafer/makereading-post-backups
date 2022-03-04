@@ -2,26 +2,26 @@
 
 ### Introduction
 
-In our daily life, we might have come across different surveys, polls, forms to fill in our view. In all those stuffs, as an individual we might not give all the information that is been asked or we might neglect some of the details, or we might not need to tell the other person what we feel. 
+In our daily life, we might have come across different surveys, polls, forms to fill in our view. In all those kinds of stuff, as an individual, we might not give all the information that is been asked or we might neglect some of the details, or we might not need to tell the other person what we feel. 
 
-The problem of missing value is quite common in many real-life datasets. Missing value can bias the results of the machine learning models and/or reduce the accuracy of the model. This article describes what is missing data, how it is represented, and the different reasons for the missing data. Along with the different categories of missing data, it also details out different ways of handling missing values with examples.
+The problem of missing value is quite common in many real-life datasets. Missing values can bias the results of the machine learning models and/or reduce the accuracy of the model. This article describes what is missing data, how it is represented, and the different reasons for the missing data. Along with the different categories of missing data, it also details different ways of handling missing values with examples.
 
 ### Dataset and Notebook
 
-in this article we are going to use the ["Titanic"](https://github.com/syedjafer/datasets/blob/main/titanic.csv) dataset to explore. Please checkout this colab [notebook](https://colab.research.google.com/drive/1v-5l5Q8hRATkSllQ_PeS33CdePG_fEKA?usp=sharing) which covers all the functions done here. 
+in this article, we are going to use the ["Titanic"](https://github.com/syedjafer/datasets/blob/main/titanic.csv) dataset to explore. Please check out this colab [notebook](https://colab.research.google.com/drive/1v-5l5Q8hRATkSllQ_PeS33CdePG_fEKA?usp=sharing) which covers all the functions done here. 
 
 ### What is a Missing Value?
 Missing data is defined as the values or data that is not stored (or not present) for some variable/s in the given dataset. Below is a sample of the missing data from the Titanic dataset. You can see the columns ‘Age’ and ‘Cabin’ have some missing values.
 
 
-![Screenshot from 2022-02-23 14-50-31.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645608546662/RftxJPsLu.png)
+![titanic dataset - missing value handling - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645608546662/RftxJPsLu.png)
 
 ### How is Missing Value Represented In The Dataset?
 
 In the dataset, blank shows the missing values. In Pandas, usually, missing values are represented by NaN (Not a Number.)
 
 
-![Screenshot from 2022-02-23 14-59-57.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645608611542/3fsEgEdl4.png)
+![titanic dataset - missing value handling - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645608611542/3fsEgEdl4.png)
 
 ### Why Is Data Missing From The Dataset ?
 
@@ -38,7 +38,7 @@ Missing values is been categorized into 3. They are,
 3. Missing Not At Random (MNAR)
 
 
-![Screenshot from 2022-02-23 15-32-29.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645610576121/Fp66gjAlI.png)
+![types of missing value data - techniques to handle missing values - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645610576121/Fp66gjAlI.png)
 
 #### 1. Missing Completely At Random
 In MCAR, the probability of data being missing is the same for all the observations.
@@ -98,7 +98,7 @@ data.isnull().sum()
 ```
 
 
-![Screenshot from 2022-02-23 15-41-33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645611106915/0860KhQWd.png)
+![Titanic dataset is null sum checking - techniques to handle missing values - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645611106915/0860KhQWd.png)
 
 From the above output, we can see that there are 3 columns, Age, Cabin, Embarked are having missing values. 
 
@@ -131,7 +131,7 @@ data.dropna(axis=0, inplace=True)
 data.isnull().sum()
 ```
 
-![Screenshot from 2022-02-23 16-52-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615363684/Pn8lAv6F2.png)
+![titanic dataset - dropna - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615363684/Pn8lAv6F2.png)
 
 #### 2. Deleting the entire column
 
@@ -139,7 +139,7 @@ If a certain column has many missing values then you can choose to drop the enti
 Code to drop the entire column is as follows:
 
 
-![Screenshot from 2022-02-23 16-56-33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615618552/fJr06T-dm.png)
+![titanic dataset - IsNull check - machine learning - deleting entire column](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615618552/fJr06T-dm.png)
 
 In the above image, we can see that "Cabin" column is having more number of null values. So we can remove the entire column. 
 
@@ -148,7 +148,7 @@ df = data.drop(['Cabin'],axis=1)
 df.isnull().sum()
 ```
 
-![Screenshot from 2022-02-23 16-58-11.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615701645/B-LiL5o72.png)
+![titanic dataset - deleting entire column - removing cabin - machine learning - blog.learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645615701645/B-LiL5o72.png)
 
 ### Imputing the Missing Value
 
@@ -165,7 +165,7 @@ data['Age'] = data['Age'].fillna(20)
 data['Age'].isnull().sum()
 ```
 
-![Screenshot from 2022-02-23 17-16-23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645616794973/xwEpAWigk.png)
+![titanic dataset - checking age column - replacing with arbitrary value - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645616794973/xwEpAWigk.png)
 
 #### 2. Replacing With Mean
 
@@ -179,7 +179,7 @@ data["Age"] = data["Age"].fillna(data["Age"].mean())
 data["Age"].isnull().sum()
 ```
 
-![Screenshot from 2022-02-23 17-20-12.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645617025663/FgnoQgZ2T.png)
+![titanic dataset - checking age column - replacing with mean - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645617025663/FgnoQgZ2T.png)
 
 #### 3. Replacing With Mode
 
@@ -192,7 +192,7 @@ data["Embarked"] = data["Embarked"].fillna(data["Embarked"].mode())
 data["Embarked"].isnull().sum()
 ```
 
-![Screenshot from 2022-02-23 17-24-43.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645617306652/qjQ3X8Obn.png)
+![titanic dataset - checking age column - replacing with mode - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645617306652/qjQ3X8Obn.png)
 
 
 #### 4. Replacing With Median
@@ -207,7 +207,7 @@ data['Age'] = data['Age'].fillna(data['Age'].median())
 ```
 
 
-![Screenshot from 2022-02-24 20-55-22.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716367524/MpOuOCbgR.png)
+![titanic dataset - checking age column - replacing with median - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716367524/MpOuOCbgR.png)
 
 #### 5. Replacing with previous value – Forward fill
 
@@ -222,7 +222,7 @@ test.fillna(method=‘ffill')
 ```
 
 
-![Screenshot from 2022-02-24 20-57-56.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716548867/LW3bxHEcu.png)
+![titanic dataset - checking age column - replacing with forward fill - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716548867/LW3bxHEcu.png)
 
 #### 6. Replacing with next value – Backward fill
 
@@ -232,7 +232,7 @@ test.fillna(method='bfill')
 ```
 
 
-![Screenshot from 2022-02-24 21-00-14.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716642766/pyl-tHKEQ.png)
+![titanic dataset - checking age column - replacing with backward fill - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716642766/pyl-tHKEQ.png)
 
 
 #### 7. Interpolation
@@ -244,7 +244,7 @@ test.interpolate()
 ```
 
 
-![Screenshot from 2022-02-24 21-02-08.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716740914/T25C777iB.png)
+![titanic dataset - checking age column - replacing with interpolation  - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645716740914/T25C777iB.png)
 
 
 ### Imputing Missing Values For Categorical Features
@@ -263,14 +263,14 @@ X = pd.DataFrame({'Shape':['square', 'square', 'oval', 'circle', np.nan]})
 ```
 
 
-![Screenshot from 2022-02-24 21-06-35.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717006666/Ovs44XZzn.png)
+![titanic dataset - checking age column - replacing with most frequent value - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717006666/Ovs44XZzn.png)
 
 ```python
 from sklearn.impute import SimpleImputer
 imputer = SimpleImputer(strategy='most_frequent')
 imputer.fit_transform(X)
 ```
-![Screenshot from 2022-02-24 21-06-59.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717033463/0lVTfukQg.png)
+![titanic dataset - checking age column - replacing with most frequent - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717033463/0lVTfukQg.png)
 
 #### 2. Impute the Value “missing”, which treats it as a Separate Category
 
@@ -280,7 +280,7 @@ imputer.fit_transform(X)
 ```
 
 
-![Screenshot from 2022-02-24 21-09-01.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717151190/5xQb1BcTT.png)
+![titanic dataset - checking age column - replacing with word missing - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717151190/5xQb1BcTT.png)
 
 In any of the above approaches, you will still need to OneHotEncode the data (or you can also use some other encoder of your choice). After One Hot Encoding, in case 1, instead of the values ‘square’, ‘oval’,’ circle’, you will get three feature columns. And in case 2, you will get four feature columns (4th one for the ‘missing’ category). So it’s like adding the missing indicator column in the data. There is another way to add a missing indicator column, which we will discuss further.
 
@@ -300,7 +300,7 @@ print(imp.transform(X))
 
 ```
 
-![Screenshot from 2022-02-24 21-12-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717351327/Tee2gRA_l.png)
+![titanic dataset - checking age column - replacing with univariate approach - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717351327/Tee2gRA_l.png)
 
 
 #### Multivariate Approach
@@ -320,7 +320,7 @@ cols = ['SibSp', 'Fare', 'Age']
 X = df[cols]
 ```
 
-![Screenshot from 2022-02-24 21-14-50.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717501258/JjAeRjP6J.png)
+![titanic dataset - checking age column - replacing with multivariate approach - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717501258/JjAeRjP6J.png)
 
 
 ```python
@@ -330,7 +330,7 @@ impute_it = IterativeImputer()
 impute_it.fit_transform(X)
 ```
 
-![Screenshot from 2022-02-24 21-15-31.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717541852/LnBVUAEdo.png)
+![titanic dataset - checking age column - replacing with iterative imputer - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717541852/LnBVUAEdo.png)
 
 Let’s see how IterativeImputer works. For all rows, in which ‘Age’ is not missing sci-kit learn runs a regression model. It uses ‘Sib sp’ and ‘Fare’ as the features and ‘Age’ as the target. And then for all rows for which ‘Age’ is missing, it makes predictions for ‘Age’ by passing ‘Sib sp’ and ‘Fare’ to the training model. So it actually builds a regression model with two features and one target and then makes predictions on any places where there are missing values. And those predictions are the imputed values.
 
@@ -345,7 +345,7 @@ impute_knn = KNNImputer(n_neighbors=2)
 impute_knn.fit_transform(X)
 ```
 
-![Screenshot from 2022-02-24 21-18-22.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717713695/5ST_JCbo0.png)
+![titanic dataset - checking age column - replacing with knn - nearest neighbour - sklearn - simple immputer - machine learning engineer - learnml.xyz](https://cdn.hashnode.com/res/hashnode/image/upload/v1645717713695/5ST_JCbo0.png)
 
 
 ### Conclusion
