@@ -2,17 +2,17 @@
 
 ### Prerequisite
 
-**Variance:** Variance tells us about the **spread of the data**.  It tells us how far the points are from the mean. Its the average square of the difference between each data point with the mean of the data points. 
+**Variance:** Variance tells us about the **spread of the data**.  It tells us how far the points are from the mean. It's the average square of the difference between each data point with the mean of the data points. 
 
 
-![linear_regression_naive_1.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646185728800/N-2Gz8gZg.png)
+![Linear Regression -  Difference with mean - variance - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646185728800/N-2Gz8gZg.png)
 
-From the above image, we can see that variance is the difference between blue point (data point) with the yellow line (mean)
+From the above image, we can see that variance is the difference between the blue point (data point) with the yellow line (mean)
 
-Formula to calculate the Variance is , 
+The formula to calculate the Variance is, 
 
 
-![Screenshot from 2022-03-02 08-29-11.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646190089193/mWoF96Luj.png)
+![formula of variance - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646190089193/mWoF96Luj.png)
 
 
 ### Introduction
@@ -23,12 +23,12 @@ In the previous article,  [Missing Value Ratio and its Implementation](https://b
 
 We can consider the titanic dataset itself, with some imputed values. ( Checkout this notebook for reference ). 
 
-![Screenshot from 2022-03-02 07-28-21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186318702/IV9iEje7P.png)
+![titanic dataset df.head - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186318702/IV9iEje7P.png)
 
 after imputing the 'travelled' column with all values as 1. 
 
 
-![Screenshot from 2022-03-02 07-29-01.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186356729/1IF7h6ZGk.png)
+![imputing value - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186356729/1IF7h6ZGk.png)
 
 Notebook Link : Please checkout this [notebook](https://colab.research.google.com/drive/1h7FbL7xrHXyhNY_n5nlNjU-4nRcHhS2t?usp=sharing), which contains the experiments done in this article.  
 
@@ -40,14 +40,14 @@ Low variance filter, is the process of removing the variables which are less con
 
 Let us consider our imputed titanic dataset, 
 
-![Screenshot from 2022-03-02 07-29-01.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186911471/Ybxh8TbkE.png)
+![imputed titanic dataset - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646186911471/Ybxh8TbkE.png)
 
 We can see the column "travelled", is almost having the same values. Do you think the variable "travelled" will affect the survival ? Remember all the values of "travelled" are the same.
 
 The answer is, No. It will not affect the "Survived" variable. If we check the variance of "travelled", it will come out to be zero.
 
 
-![Screenshot from 2022-03-02 07-40-56.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187067922/AOdMn6qJr.png)
+![variance calculation - low variance filter - pandas df.var()](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187067922/AOdMn6qJr.png)
 
 
 We can see that variables with low variance have less impact on the target variable. Next, we can set a threshold value of variance. And if the variance of a variable is less than that threshold, we can see if drop that variable, but there is one thing to remember and it’s very important, **Variance is range-dependent,** therefore we need to do **normalization** before applying this technique.
@@ -67,7 +67,7 @@ data.head()
 ```
 
 
-![Screenshot from 2022-03-02 07-48-27.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187518879/YdXYnT5aA.png)
+![titanic dataset head - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187518879/YdXYnT5aA.png)
 
 
 Again, have a few independent variables and a target variable, which is essentially **Survived** . A quick look at the shape of the data-
@@ -76,7 +76,7 @@ Again, have a few independent variables and a target variable, which is essentia
 data.shape
 ```
 
-![Screenshot from 2022-03-02 07-49-37.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187588886/JI3X0zoEh.png)
+![shape of titanic dataset - low variance filter - dimensionality reduction](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187588886/JI3X0zoEh.png)
 
 It confirms we are working with 13 variables or columns and have 891 observations or rows. Now, let’s check whether we have missing values or not-
 
@@ -104,19 +104,19 @@ new_data.shape
 
 ```
 
-![Screenshot from 2022-03-02 07-53-44.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187835820/uHehHWFLi.png)
+![missing value percentage - low variance filter - threshold level - dimensionality reduction](https://cdn.hashnode.com/res/hashnode/image/upload/v1646187835820/uHehHWFLi.png)
 
 
 Our next step is to normalize the variables because variance remember is range dependent. And as we saw in our dataset, the variables have a pretty high range, which will skew our results. So go ahead and do that
 
-For easy purpose, we can consider only number variables for our calculations
+For the easy purpose, we can consider only number variables for our calculations
 
 
 ```python
 data = new_data[['Survived', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'travelled' ]]
 ```
 
-![Screenshot from 2022-03-02 07-59-38.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188204559/oyhNsWDPs.png)
+![titanic dataset - low variance filter - filtering a subset of dataset](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188204559/oyhNsWDPs.png)
 
 We need to handle the [missing values in a meaningful way](https://blog.learnml.xyz/tactics-to-handle-missing-values). For time being we can fill all the NaN to 0. 
 
@@ -134,7 +134,7 @@ data.columns, data_scaled.var()
 ```
 
 
-![Screenshot from 2022-03-02 08-04-15.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188470802/b9cH3crxc.png)
+![titanic dataset - scaled dataset - low variance filter](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188470802/b9cH3crxc.png)
 
 Something strange, 
 . <br>
@@ -148,11 +148,11 @@ Something strange,
 .<br>
 .<br>
 
-The columns survived, pclass, SibSp, Parch were also having low variance. Its because these are categorical variables. 
+The columns survived, Pclass, SibSp, Parch were also having low variance. Its because these are categorical variables. 
 
 > Note: Remember we should apply the variance filter only on numerical variables. If we have categorical variables, we can look at the frequency distribution of the categories. And if a single category is repeating more frequently, let’s say by 95% or more, you can then drop that variable. 
 
-For understanding low variance filter, we can ignore the above condition. 
+For understanding the low variance filter, we can ignore the above condition. 
 
 We’ll store the variance results in a new column and the column names in a different variable
 
@@ -176,7 +176,7 @@ for index, var in enumerate(variance):
 ```
 
 
-![Screenshot from 2022-03-02 08-11-18.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188892465/48YtoxQU2.png)
+![low variance filter threshold applied - dimensionality reduction - machine learning for free ](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188892465/48YtoxQU2.png)
 
 
 All right. So let’s see what we have
@@ -185,12 +185,12 @@ All right. So let’s see what we have
 variable
 ```
 
-![Screenshot from 2022-03-02 08-11-50.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188922945/IIp_v-eKd.png)
+![low variance filter threshold applied - dimensionality reduction - machine learning for free](https://cdn.hashnode.com/res/hashnode/image/upload/v1646188922945/IIp_v-eKd.png)
 
 We can see some columns has been dropped, 
 
 ```python
-# creating a new dataframe using the above variables
+# creating a new data frame using the above variables
 new_data = data[variable]
 
 # first five rows of the new data
@@ -198,12 +198,12 @@ new_data.head()
 ```
 
 
-![Screenshot from 2022-03-02 08-13-17.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1646189010038/_aMPyT9iW.png)
+![low variance filter threshold applied - dimensionality reduction - machine learning for free - new data created from subset](https://cdn.hashnode.com/res/hashnode/image/upload/v1646189010038/_aMPyT9iW.png)
  
 Now, we have reduced the dimensions of the data and its better than the initial one. 
 
 ### Conclusion
 1. We have seen the implementation of the low variance filter from scratch and we understood how its reducing the dimensions of the data. 
-2. Apply these low variance filter only to the numerical columns (dont apply it in the categorical variables).
+2. Apply these low variance filters only to the numerical columns (dont apply it in the categorical variables).
 
 
