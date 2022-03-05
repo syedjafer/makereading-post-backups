@@ -5,7 +5,7 @@
 Usually, partition values are those values of the variable which divide the distribution into
 a certain number of equal parts. 
 
-As a matter of fact, commonly used partition values are **quartiles, deciles, and percentiles.**
+Commonly used partition values are **quartiles, deciles, and percentiles.**
 For example, quartiles divide the data into four equal parts. Similarly, deciles and percentiles divide
 the distribution into ten and hundred equal parts, respectively.
 
@@ -20,9 +20,9 @@ The four quarters that divide a data set into quartiles are:
 **Third Quartile:** The second highest 25% of numbers (above the median).
 **Fourth Quartile: **The highest 25% of numbers.
 
-> **Median: ** The value separating the higher half from the lower half of a data sample. In other words, Median is the **middle element in the sorted elements** (ascending or descending) , which can be more descriptive than the average of the elements.
+> **Median: ** The value separating the higher half from the lower half of a data sample. In other words, Median is the **middle element in the sorted elements** (ascending or descending), which can be more descriptive than the average of the elements.
 
-This parting of data to 4 parts 
+This parting of data into 4 parts 
 
 
 Let us consider the below data, 
@@ -39,10 +39,10 @@ print(data)
 # Output
 [2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 9, 10, 12, 12, 34, 45]
 ```
-we can see its having 16 numbers, so we can take middle two numbers and take average of it, 
+we can see it's having 16 numbers, so we can take the middle two numbers and take an average of it, 
 
 
-![Screenshot from 2022-02-22 09-23-29.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645502206150/nvMSNV6Kd.png)
+![quartiles - percentiles - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645502206150/nvMSNV6Kd.png)
 
 We can see the middle numbers are 5 (at index 7) and 6 (at index 8). so the average of these two numbers is 5.5. So Our Median is 5.5
 
@@ -54,19 +54,19 @@ Now, if we are repeating this process one time on the right hand side of the med
 
 On the left hand side, we need to find median between index 0 (start) and index of median (here 7).
 
-![Screenshot from 2022-02-22 09-40-33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503134655/DcvzP5yV5.png)
+![quartiles - percentiles - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503134655/DcvzP5yV5.png)
  
 #### Deriving Q3 (Right Hand Side)
 
 On the right hand side, we need to find the median between index of median (here 8) and the last element (index 15)
 
 
-![Screenshot from 2022-02-22 09-44-45.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503302472/1mpaPpeyg.png)
+![quartiles - percentiles - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503302472/1mpaPpeyg.png)
 
 Repeating the same for first element and Q2 is Q1. Similarly between Q3 and last element is Q4. For visualizing the quartiles, there is a special kind of graph is available named "Box Plot"
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503460412/emTKgVfIg.png)
+![Box plot - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645503460412/emTKgVfIg.png)
 
 In the above box plot, we are able to see some dots at the end ( at 35 and 45 ). These are Outliers. we will discuss in detail in further session. 
 
