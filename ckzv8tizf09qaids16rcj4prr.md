@@ -7,15 +7,15 @@
 
 ### Notebook
 
-Colab Notebook : https://colab.research.google.com/drive/1GACG2UAucdcQqaR1a2qY4N-_AK3RtYSW?usp=sharing
+Colab Notebook: https://colab.research.google.com/drive/1GACG2UAucdcQqaR1a2qY4N-_AK3RtYSW?usp=sharing
 
-Feel free to tryout the learning in this article. 
+Feel free to try out the learning in this article. 
 
 ### Introduction
 
-In the linear regression, we had one assumption ; that the data should be linear in nature. Simple Linear Regression can't handle the **non-linearity** in the data. This could be solved by introducing quadratic variables inside the function and this is called as polynomial regression. We will see in detail of these steps and lets derive the polynomial regression. 
+In the linear regression, we had one assumption; that the data should be linear in nature. Simple Linear Regression can't handle the **non-linearity** in the data. This could be solved by introducing quadratic variables inside the function and this is called polynomial regression. We will see in detail of these steps and let's derive the polynomial regression. 
 
-### What is the problem with Linear regression ?
+### What is the problem with Linear regression?
 
 Let us create a dataset, 
 
@@ -42,7 +42,7 @@ plt.show()
 
 Output will look like this, 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645350532994/jMjiTMSLG.png)
+![2D dimensional data plotting - linear regression - polynomial regression - learnml - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645350532994/jMjiTMSLG.png)
 
 Now let us try applying Linear Regression on top of this dataset, 
 
@@ -64,9 +64,9 @@ plt.show()
 
 ```
 
-Resultant linear model will look like this, 
+The resultant linear model will look like this, 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645350648726/bCDWRcIqz.png)
+![Linear regression model - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645350648726/bCDWRcIqz.png)
 
 Now let us evaluate the model using the [Regression Evaulation Metrics](https://learnml.hashnode.dev/evaluation-metrics-used-in-regression) . Here we can use RMSE and R<sup>2</sup>
 
@@ -82,9 +82,9 @@ print(f"R2 score of linear regression is {r2}")
 ```
 
 
-![Screenshot from 2022-02-20 15-26-37.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645351041248/64Ei7Icro.png)
+![RMSE and R2 score of linear regression - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645351041248/64Ei7Icro.png)
 
-we can see the RMSE is pretty high and R<sup>2</sup> score is also low. Its perfoming low. we can't bend the curve to get it fit for the data. Since our line equation is 
+we can see the RMSE is pretty high and R<sup>2</sup> score is also low. It's performing low. we can't bend the curve to get it fit for the data. Since our line equation is 
 
 > Y = mX + C
 
@@ -96,42 +96,42 @@ There is no quadratic part in our equation.
 .
 .
 .
-💡Wait, did you got the idea, Why can't we introduce the quadratic or polynomial variables inside the equation to create a curve and apply gradient descent on top of it to get the best fit line . 
+💡Wait did you get the idea, Why can't we introduce the quadratic or polynomial variables inside the equation to create a curve and apply gradient descent on top of it to get the best fit line. 
 
 ### Rise of Polynomial Regression 
 
-Polynomial regression is a form of Linear regression where only due to the Non-linear relationship between dependent and independent variables we add some polynomial terms to linear regression to convert it into Polynomial regression.
+Polynomial regression is a form of Linear regression where only due to the Non-linear relationship between dependent and independent variables do we add some polynomial terms to linear regression to convert it into Polynomial regression.
 
-To generate a higher order equation we can add powers of the original features as new features. The linear model,
+To generate a higher-order equation we can add powers of the original features as new features. The linear model,
 
-> ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358759935/3paIxMGu7.png)
+![polynomial regression - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358759935/3paIxMGu7.png)
 
 can be transformed to,
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358784683/r3AYmnAfC.png)
+![polynomial regression - second degree - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358784683/r3AYmnAfC.png)
 
-This is still considered to be linear model as the coefficients/weights associated with the features are still linear. x² is only a feature. However the curve that we are fitting is quadratic in nature.
+This is still considered to be a linear model as the coefficients/weights associated with the features are still linear. x² is only a feature. However, the curve that we are fitting is quadratic in nature.
 
-To convert the original features into their higher order terms we will use the **PolynomialFeatures** class provided by **scikit-learn**. Next, we train the model using Linear Regression.
+To convert the original features into their higher-order terms we will use the **PolynomialFeatures** class provided by **sci-kit-learn**. Next, we train the model using Linear Regression.
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358905179/rpnBwzdtg.png)
+![polynomial regression - machine learning - curve line - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645358905179/rpnBwzdtg.png)
 
 
 
 It is quite clear from the plot that the quadratic curve is able to fit the data better than the linear line. Computing the RMSE and R²-score of the quadratic plot gives:
 
 
-![Screenshot from 2022-02-20 17-43-03.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645359197396/qFqbgeeDz.png)
+![lower RMSE and R2 score polynomial regression - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645359197396/qFqbgeeDz.png)
 
 > We can see that RMSE has decreased and R²-score has increased as compared to the linear line.
 
 we can try to increase the degree of the polynomial and experiment, 
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645359255019/rw8XA6tqT.png)
+![polynomial regression with 3 degrees - machine learning - learnm](https://cdn.hashnode.com/res/hashnode/image/upload/v1645359255019/rw8XA6tqT.png)
 
-if we are trying to substitute degree = 20, then we can see the line is connecting most of the data points ( Line is swiggled more to fit those points ) and this leads to **Curse of Dimensionality**
+if we are trying to substitute degree = 20, then we can see the line is connecting most of the data points ( Line is wiggled more to fit those points ) and this leads to **Curse of Dimensionality**
 
 ### Advantages of polynomial regression
 1. You can model non-linear relationships between variables
@@ -150,6 +150,6 @@ Polynomial regression is a simple yet powerful tool for predictive analytics. It
 ### Interview Questions
 1. Can linear regression be used for representing quadratic equations? 
 2. What are the problems of Polynomial Regression.
-3. Will overfitting occurs in polynomial regression. 
+3. Will overfitting occur in polynomial regression. 
 4. What happens when the degree is getting increased to a greater value. 
-5. What is the loss function of polynomial regression ?
+5. What is the loss function of polynomial regression?
