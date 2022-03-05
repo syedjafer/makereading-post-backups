@@ -8,16 +8,16 @@ All Experiments done in this blog is available in this [notebook](https://colab.
 
 Time is the most essential concept in any business. We map our sales numbers, revenue, bottom line, growth, and even prepare forecasts – all based on the time component.
 
-But consequently, this can be a complex topic to understand for beginners. There is a lot of nuance to time series data that we need to consider when we’re working with datasets that are time-sensitive.
+But consequently, this can be a complex topic to understand for beginners. There is a lot of nuance to time-series data that we need to consider when we’re working with datasets that are time-sensitive.
 
-Existing time series forecasting models undoubtedly work well in most cases, but they do have certain limitations. In this article we will be seeing the various feature engineering techniques for extracting useful information using the date-time column.
+Existing time series forecasting models undoubtedly work well in most cases, but they do have certain limitations. In this article,, we will be seeing the various feature engineering techniques for extracting useful information using the date-time column.
 
-### What is Time Series Analysis ?
+### What is Time Series Analysis?
 
-Time series analysis is a specific way of analyzing a sequence of data points collected over an interval of time. In time series analysis, analysts record data points at consistent intervals over a set period of time rather than just recording the data points intermittently or randomly.
+Time series analysis is a specific way of analyzing a sequence of data points collected over an interval of time. In time series analysis, analysts record data points at consistent intervals over a set period rather than just recording the data points intermittently or randomly.
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645581534492/cudIJGlgM.png)
+![predict stock prices - time series analysis - meme](https://cdn.hashnode.com/res/hashnode/image/upload/v1645581534492/cudIJGlgM.png)
 
 It refers to identifying the common patterns displayed by the data over a period of time. For this, experts employ specific methods to study the data’s characteristics characteristics and extract meaningful statistics that eventually aid in business forecasting.
 
@@ -28,7 +28,7 @@ Let’s take a simple example to understand this. If we want to predict today’
 There’s another thing we need to consider – time series data may also have certain trends or seasonality. Take a look at the plot shown below about the number of tickets booked for an airline over the years: 
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645581779840/5TELHPC5R.png)
+![time series analysis between month and passengers in jet rail ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645581779840/5TELHPC5R.png)
 <small>Image Source : solver.com</small>
 
 We can clearly see an increasing trend. Such information can be useful for making more accurate predictions. Now, let’s take a dataset with date-time variables and start learning about feature engineering!
@@ -57,7 +57,7 @@ test_df = pd.read_csv('https://raw.githubusercontent.com/syedjafer/datasets/main
 train_df.head()
 ```
 
-![Screenshot from 2022-02-23 08-53-35.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586637781/RYejv4PAr.png)
+![Jetrail data head value - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586637781/RYejv4PAr.png)
 
 If we are looking to the data types of the columns, 
 
@@ -66,13 +66,13 @@ train_df.dtypes
 ```
 
 
-![Screenshot from 2022-02-23 08-56-34.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586806154/veCpPN_p8.png)
+![time series analysis - dtypes - jetrail data](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586806154/veCpPN_p8.png)
 
 
 We have two columns here – so it’s clearly a univariate time series. Also, the data type of the date variable is taken as an object, i.e. it is being treated as a categorical variable. Hence, we will need to convert this into a DateTime variable. We can do this using the appropriately titled datetime function in Pandas:
 
 
-![Screenshot from 2022-02-23 08-57-55.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586887603/kChhyIgz7.png)
+![pandas conversion of an object to DateTime object - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645586887603/kChhyIgz7.png)
 
 Now that we have the data ready, let’s look at the different features we can engineer from this variable. Along with each of these feature engineering techniques, we will discuss different scenarios where that particular technique can be useful.
 
@@ -99,7 +99,7 @@ train_df.head()
 ```
 
 
-![Screenshot from 2022-02-23 09-00-30.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587056815/lsL2ENFHK.png)
+![creating dayofweek_name from the DateTime object - time series analysis ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587056815/lsL2ENFHK.png)
 
 ### Time-Based Features
 
@@ -117,7 +117,7 @@ train_df['minute'] = train_df['Datetime'].dt.minute
 train_df.head()
 ```
 
-![Screenshot from 2022-02-23 09-01-52.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587130846/qZkHu5PZr.png)
+![creating hour and minute from the datetime object - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587130846/qZkHu5PZr.png)
 
 Similarly, we can extract a number of features from the date column. 
 
@@ -134,13 +134,13 @@ train_df = train_df[['Datetime', 'lag_1', 'Count']]
 train_df.head()
 ```
 
-![Screenshot from 2022-02-23 09-04-13.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587265674/izqh-Q_tF.png)
+![applying lag feature - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587265674/izqh-Q_tF.png)
 
 ### Rolling Window Feature
 
 The Method of calculating the statistical values based on the past values is called the rolling window method because the window would be different for every data point.
 
-![3hotmk.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587458916/3SDCaIRLz.gif)
+![rolling window feature - time series analysis - feature engineering - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587458916/3SDCaIRLz.gif)
 
 Since this looks like a window that is sliding with every next point, the features generated using this method are called the ‘rolling window’ features.
 
@@ -157,7 +157,7 @@ train_df = train_df[['Datetime', 'rolling_mean', 'Count']]
 train_df.head(10)
 ```
 
-![Screenshot from 2022-02-23 09-08-58.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587561751/Ki6uZVsO-.png)
+![applying rolling mean - time series analysis - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587561751/Ki6uZVsO-.png)
 
 Similarly, you can consider the sum, min, max value, etc. (for the selected window) as a feature and try it out on your own machine.
 
@@ -176,12 +176,12 @@ In the case of a rolling window, the size of the window is constant while the wi
 Here’s a gif that explains how our expanding window function works:
 
 
-![output_B4KHcT.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587712483/huoqm0Y87.gif)
+![expanding window features - machine learning - feature engineering](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587712483/huoqm0Y87.gif)
 
 As you can see, with every step, the size of the window increases by one as it takes into account every new value in the series. This can be implemented easily in Python by using the expanding() function. Let’s code this using the same data:
 
 
-![Screenshot from 2022-02-23 09-12-47.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587788984/QEOrX4Crv.png)
+![size of the window increases - expanding window features - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587788984/QEOrX4Crv.png)
 
 ### Domain-Specific Features
 
@@ -194,7 +194,7 @@ Below is the data provided by a retailer for a number of stores and products. Ou
 But hold on. Let me ask you a question – would it be the right way to build lag features from lag(1) to lag(7) throughout the data?
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587855934/D4d5rJ90h.png)
+![domain specific features - machine learning - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645587855934/D4d5rJ90h.png)
 
 
 Certainly not! There are different stores and products, and the demand for each store and product would be significantly different. In this case, we can create lag features considering the store-product combination. Moreover, if we have knowledge about the products and the trends in the market, we would be able to generate more accurate (and fewer) features.
@@ -219,12 +219,12 @@ Let’s create a validation set for our problem. But first, we must check the du
 train_df['Datetime'].min(), train_df['Datetime'].max(), (train_df['Datetime'].max() -train_df['Datetime'].min())
 ```
 
-![Screenshot from 2022-02-23 09-16-56.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645588029743/jmp3HaPPi.png)
+![creation of the validation set - machine learning - time series analysis](https://cdn.hashnode.com/res/hashnode/image/upload/v1645588029743/jmp3HaPPi.png)
 
 We have data for almost 761 days. Let’s save 100 days for validation and use the remaining for training:
 
 
-![Screenshot from 2022-02-23 09-19-06.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645588164681/cwFcIHXvg.png)
+![validation set created - time series analysis - feature engineering - machine learning](https://cdn.hashnode.com/res/hashnode/image/upload/v1645588164681/cwFcIHXvg.png)
 
 ### Conclusion
 
