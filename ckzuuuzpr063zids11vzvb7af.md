@@ -6,7 +6,7 @@ Machine Learning is a branch of Artificial Intelligence. It contains many algori
 
 Regression is also one type of supervised Machine learning and in this tutorial, we will discuss various metrics for evaluating regression Models and How to implement them using the **sklearn library**.
 
-### What is residual ?
+### What is residual?
 
 We know that linear regression tries to fit a line that produces the smallest difference between predicted and actual values, where these differences are unbiased as well. This difference or error is also known as residual.
 
@@ -17,7 +17,7 @@ or <br>
 > **e = y — ŷ**
 
 
-![linear_regression_system_2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645320175663/qw0-TkUbm.png)
+![residual value - evaluation metrics - machine learning - learnml , actual_value - predicted value](https://cdn.hashnode.com/res/hashnode/image/upload/v1645320175663/qw0-TkUbm.png)
 
 It is important to note that, before assessing or evaluating our model with evaluation metrics like 
 R-squared, we must make use of residual plots.
@@ -29,7 +29,7 @@ Residual plot showing the errors corresponding to the predicted values must be r
 Consider the below graph, 
 
 
-![Screenshot from 2022-02-20 06-38-28.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645319343478/3_aixs9Ow.png)
+![bias - machine learning - learn ml - difference between trained models ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645319343478/3_aixs9Ow.png)
 
 
 here, the sinusoidal line is our actual model value and the straight lines are derived by linear regression (best fit line). By seeing, its evident that there is a huge difference beween the actual value and the predicted value. This is having higher bias. Hope you got what bias means ?
@@ -54,7 +54,7 @@ Now, I hope you get the importance of Evaluation metrics. let’s start understa
 
 Here for the easy understanding, we can use simple linear regression dataset, it will be looking like this, 
 
-![Screenshot from 2022-02-20 10-51-44.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645334521584/NKHmubepM.png)
+![train_df - machine learning - df.head() - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645334521584/NKHmubepM.png)
 
 ```python
 # Imports
@@ -72,7 +72,7 @@ test_df = pd.read_csv("https://raw.githubusercontent.com/syedjafer/datasets/main
 ```
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645334631367/B56jQdfVm.png)
+![scatter plot - linear regression - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645334631367/B56jQdfVm.png)
 
 
 ### Types of Evaluation Metrics
@@ -91,7 +91,7 @@ We will derive each of these error functions logically and find the benefits of 
 Let us consider our [linear regression problem](https://learnml.hashnode.dev/linear-regression-with-gradient-descent-scratch), 
 
 
-![linear_regression_system_2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645321862181/IM3nwH357.png)
+![mean squared error - linear regression, difference between actual value and predicted value](https://cdn.hashnode.com/res/hashnode/image/upload/v1645321862181/IM3nwH357.png)
 
 those red lines are the difference, 
 
@@ -122,10 +122,10 @@ This is a summed error value, so we can take the average,
 
 = 188 / 6 = 31.33
 
-The formula that we used above is , 
+The formula that we used above is, 
 
 
-![Screenshot from 2022-02-20 07-32-17.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645322554356/dSYmaGzV6.png)
+![formula of mean squared error - loss function - error function - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645322554356/dSYmaGzV6.png)
 
  
 MSE is a most used and very simple metric with a little bit of change in mean absolute error. Mean squared error states that finding the squared difference between actual and predicted value.
@@ -173,7 +173,7 @@ This is a summed error value, so we can take the average,
 = 25 / 6 = 4.1
 
 
-![Screenshot from 2022-02-20 08-24-34.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645325688880/iwK2aOlJw.png)
+![formula of Mean absolute error - machine learning - learnml - absoule value of the error - learnml - regression tricks](https://cdn.hashnode.com/res/hashnode/image/upload/v1645325688880/iwK2aOlJw.png)
 
 ```python
 from sklearn.metrics import mean_absolute_error
@@ -192,7 +192,7 @@ print("MAE",mean_absolute_error(y_test,y_pred))
 As RMSE is clear by the name itself, that it is a simple square root of mean squared error.
 
 
-![Screenshot from 2022-02-20 08-32-39.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645326174116/4TdGSF2Enf.png)
+![Root Mean squared error - machine learning - learnml.xyz - regression metrics](https://cdn.hashnode.com/res/hashnode/image/upload/v1645326174116/4TdGSF2Enf.png)
 
 
 > Note: RMSD and RMSE are same. 
@@ -219,7 +219,7 @@ It is a very simple metric that is used by most of the datasets hosted for Machi
 The Root Mean Squared Log Error (RMSLE) can be defined using a slight modification on sklearn's mean_squared_log_error function, which itself a modification on the familiar Mean Squared Error (MSE) metric.
 
 
-![Screenshot from 2022-02-20 08-36-19.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645326394253/wTLleibyc.png)
+![root mean squared log error - regression metrics - loss function - cost function - linear regression](https://cdn.hashnode.com/res/hashnode/image/upload/v1645326394253/wTLleibyc.png)
 
 ```python
 print("RMSE",np.log(np.sqrt(mean_squared_error(y_test,y_pred))))
@@ -228,7 +228,7 @@ print("RMSE",np.log(np.sqrt(mean_squared_error(y_test,y_pred))))
 Comparison between RMSE and RMSLE, 
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645329414360/Dge5JxOQ3.png)
+![comparison between rmse and rmsle, linear regression, loss function, error function](https://cdn.hashnode.com/res/hashnode/image/upload/v1645329414360/Dge5JxOQ3.png)
 
 **Advantages of RMSLE**
 1. Robustness to the effect of outliers ->  the outliers are drastically scaled down therefore nullifying their effect.
@@ -249,14 +249,14 @@ R2 score is a metric that tells the performance of your model, not the loss in a
 In contrast, MAE and MSE depend on the context as we have seen whereas the R2 score is independent of context.
 
 
-![Screenshot from 2022-02-20 10-40-29.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645333854541/Z9ASzFiS3.png)
+![r2 error - formula for r2 metric - formula for r2 error metric - linear regression - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645333854541/Z9ASzFiS3.png)
 
 So, with help of R squared we have a baseline model to compare a model which none of the other metrics provides. The same we have in classification problems which we call a threshold which is fixed at 0.5. So basically R2 squared calculates how must regression line is better than a mean line.
 
 Hence, R2 squared is also known as Coefficient of Determination or sometimes also known as Goodness of fit.
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645333735984/6nNGSYgxP.png)
+![difference between the mean of the data points and best fit line - linear regression - metric for regression](https://cdn.hashnode.com/res/hashnode/image/upload/v1645333735984/6nNGSYgxP.png)
 
 Now, how will you interpret the R2 score? suppose If the R2 score is zero then the above regression line by mean line is equal means 1 so 1-1 is zero. So, in this case, both lines are overlapping means model performance is worst, It is not capable to take advantage of the output column.
 
@@ -281,7 +281,7 @@ But the problem is when we add an irrelevant feature in the dataset then at that
 
 Hence, To control this situation Adjusted R Squared came into existence.
 
-![Screenshot from 2022-02-20 09-59-22.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645331380537/t_XvW4qcu.png)
+![adjusted r2 - error metric of linear regression - formula for linear regression ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645331380537/t_XvW4qcu.png)
 
 Now as p increases by adding some features so the denominator will decrease, N - 1 will remain constant. R2 score will remain constant or will increase slightly so the complete answer will increase and when we subtract this from one then the resultant score will decrease. so this is the case when we add an irrelevant feature in the dataset.
 
