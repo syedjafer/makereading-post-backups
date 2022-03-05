@@ -1,5 +1,7 @@
 ## High Correlation filter
 
+%%[socialshare]
+
 ### Introduction
 
 In the previous article, [Variance and Low variance filter](https://blog.learnml.xyz/variance-and-low-variance-filter) we saw a feature selection technique Missing Value Ratio. In this article, we’re going to cover another technique of feature selection known as the High Correlation filter.
