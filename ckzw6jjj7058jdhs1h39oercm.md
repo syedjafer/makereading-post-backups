@@ -5,11 +5,11 @@
 
 ### Introduction
 
-Curse of Dimensionality refers to a set of problems that arise when working with high-dimensional data. The dimension of a dataset corresponds to the number of attributes/features that exist in a dataset. A dataset with a large number of attributes, generally of the order of a hundred or more, is referred to as high dimensional data. Some of the difficulties that come with high dimensional data manifest during analyzing or visualizing the data to identify patterns, and some manifest while training machine learning models. The difficulties related to training machine learning models due to high dimensional data is referred to as ‘**Curse of Dimensionality**’. 
+Curse of Dimensionality refers to a set of problems that arise when working with high-dimensional data. The dimension of a dataset corresponds to the number of attributes/features that exist in a dataset. A dataset with a large number of attributes, generally of the order of a hundred or more, is referred to as high dimensional data. Some of the difficulties that come with high dimensional data manifest during analyzing or visualizing the data to identify patterns, and some manifest while training machine learning models. The difficulties related to training machine learning models due to high dimensional data are referred to as ‘**Curse of Dimensionality**’. 
 
 > Note: All the Experiments executed in this article is available in this [colab notebook](https://colab.research.google.com/drive/1g3xfikqXZmBg-nePiAxzZ2GoX4wWHxK8?usp=sharing)
 
-### What is the problem with more dimension ?
+### What is the problem with more dimensions?
 
 Let us consider a dataset , 
 
@@ -20,7 +20,7 @@ y = x - 2 * (x ** 2) + 0.5 * (x ** 3) + np.random.normal(-3, 3, 20)
 ```
 
 
-![Screenshot from 2022-02-21 07-37-25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409265218/JRxzgZvtS.png)
+![Randomly generated datapoints - curse of dimensionality - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409265218/JRxzgZvtS.png)
 
 We can plot this data in dimension wise, 
 
@@ -33,22 +33,22 @@ plt.title("1D")
 ```
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409344653/PXmNULIDq.png)
+![One dimensional data - curse of dimensionality - machine learning - learnml ](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409344653/PXmNULIDq.png)
 
-we can see the points in the x-axis (at the bottom) are more close to each other.
+we can see the points on the x-axis (at the bottom) are more close to each other.
 
 #### 2D - Two Dimension
 
-Now we can consider y-axis also and plot the graph in 2D
+Now we can consider the y-axis also and plot the graph in 2D
 
 ```python
 plt.scatter(x,y, s=10)
 plt.show()
 ```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409442191/B9ZVTRPmD.png)
+![2D Dimensional data - curse of dimensionality - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645409442191/B9ZVTRPmD.png)
 
-Now, we can see the points are moved some distance from each other . Its closer, but not as much closer as in 1D. 
+Now, we can see the points have moved some distance from each other. It's closer, but not as much closer as in 1D. 
 
 #### 3D - Three Dimension
 
@@ -64,15 +64,15 @@ x_poly = polynomial_features.fit_transform(x)
 
 In the 3 Dimensional Space, we can see the points are getting far again from each other. 
 
-So we figured the first problem, 
+So we figured out the first problem, 
 
-**When the Dimension Increases,  the data points are moving from denser to sparse area. ** 
+**When the Dimension Increases,  the data points are moved from denser to the sparse area. ** 
 
-There is also another problem when data points are in higher dimensions , every point is of approx. equi distance from each other. This affects the algorithms that are based on distance ( kNN and more. )
+There is also another problem when data points are in higher dimensions, every point is of approx. equidistance from each other. This affects the algorithms that are based on distance ( kNN and more. )
 
-Mathematical Proof : https://journalofbigdata.springeropen.com/articles/10.1186/s40537-017-0083-6 
+Mathematical Proof: https://journalofbigdata.springeropen.com/articles/10.1186/s40537-017-0083-6 
 
-Distance concentration refers to the problem of all the pairwise distances between different samples/points in the space converging to the same value as the dimensionality of the data increases. Several machine learning models such as clustering or nearest neighbours’ methods use distance-based metrics to identify similar or proximity of the samples. Due to distance concentration, the concept of proximity or similarity of the samples may not be qualitatively relevant in higher dimensions. 
+Distance concentration refers to the problem of all the pairwise distances between different samples/points in the space converging to the same value as the dimensionality of the data increases. Several machine learning models such as clustering or nearest neighbors’ methods use distance-based metrics to identify similarities or proximity of the samples. Due to distance concentration, the concept of proximity or similarity of the samples may not be qualitatively relevant in higher dimensions. 
 
 ### Explanation
 
@@ -101,15 +101,15 @@ for deg in range(2, 200, 3):
 will result in the below graph, 
 
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645415972429/7bYmzy1uwd.png)
+![affect of rmse and r2 value when there is an increase in dimensions - curse of dimensionality - machine learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1645415972429/7bYmzy1uwd.png)
 
-As we increasing the dimensions (new features), after a certain point both the RMSE and R<sup>2</sup> score is getting reduced drastically . This observation is called as **Hughes phenomenon**
+As we increase the dimensions (new features), after a certain point both the RMSE and R<sup>2</sup> score is getting reduced drastically. This observation is called as **Hughes phenomenon**
 
 > Hughes Phenomenon: For a fixed size dataset the performance of a machine learning model decreases as the dimensionality increases.
 
 ### Notebook
 
-COLAB Notebook : https://colab.research.google.com/drive/1g3xfikqXZmBg-nePiAxzZ2GoX4wWHxK8?usp=sharing
+COLAB Notebook: https://colab.research.google.com/drive/1g3xfikqXZmBg-nePiAxzZ2GoX4wWHxK8?usp=sharing
 
 ### Conclusion
 
@@ -122,8 +122,8 @@ Wait
 . <br>
 . <br>
 . <br>
-Is there any way to combine n features to 1, like reducing the dimensions. yes, there is one. 
-Dimensionality reduction is an important technique to overcome the curse of dimensionality in data science and machine learning. As the number of predictors (or dimensions or features) in the dataset increase, it becomes computationally more expensive (ie. increased storage space, longer computation time) and exponentially more difficult to produce accurate predictions in classification or regression models. Moreover, it is hard to wrap our head around to visualize the data points in more than 3 dimensions.
+Is there any way to combine n features to 1, like reducing the dimensions? yes, there is one. 
+Dimensionality reduction is an important technique to overcome the curse of dimensionality in data science and machine learning. As the number of predictors (or dimensions or features) in the dataset increase, it becomes computationally more expensive (ie. increased storage space, longer computation time) and exponentially more difficult to produce accurate predictions in classification or regression models. Moreover, it is hard to wrap our heads around to visualize the data points in more than 3 dimensions.
 
 We will see more about dimensionality reduction in upcoming articles.
 
@@ -131,7 +131,7 @@ We will see more about dimensionality reduction in upcoming articles.
 1. What is the Curse of Dimensionality?
 2. What is the Curse of Dimensionality and how can Unsupervised Learning help with it? 
 3. Why is data more sparse in a high-dimensional space?
-4. How does the Curse of Dimensionality affect Machine Learning models?
+4. How does the Curse of Dimensionality effect Machine Learning models?
 5.  How does High Dimensionality affect Distance-Based Mining Applications?
 6. Does kNN suffer from the Curse of Dimensionality and if it why?
 7. How does the Curse of Dimensionality affect k-Means Clustering?
