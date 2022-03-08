@@ -22,13 +22,13 @@ Let's see steps 1, 2, 4, and 5 in brief,
 #### Data Preprocessing 
 The first step in any pipeline is data preprocessing. In this step, raw data is gathered and merged into a single organized framework. Data preprocessing is a Data Mining technique that involves transferring raw data into an understandable format. Real-world data is usually incomplete, inconsistent, and lacks certain behaviors or trends, most likely to contain many inaccuracies. The process of getting usable data for a Machine Learning algorithm follows steps such as Feature Extraction and Scaling, Feature Selection, Dimensionality reduction, and sampling. The product of Data Pre-processing is the final dataset used for training the model and testing purposes.
 
-### Data Cleaning
+#### Data Cleaning
 Next, this data flows to the cleaning step. To make sure the data paints a consistent picture that your pipeline can learn from. Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled.
 
-### Model Selection
+#### Model Selection
 Model selection is the process of choosing one among many candidate models for a predictive modeling problem. There may be many competing concerns when performing model selection beyond model performance, such as complexity, maintainability, and available resources. The two main classes of model selection techniques are probabilistic measures and resampling methods. we will see them in upcoming articles 
 
-### Prediction Generation
+#### Prediction Generation
 The prediction step of your pipeline comprises two processes:
 
 Building features for all objects (e.g. users) that will get a prediction, and Feeding those features through the pipeline’s winning model. Together, these two actions result in a prediction being made for each object.
