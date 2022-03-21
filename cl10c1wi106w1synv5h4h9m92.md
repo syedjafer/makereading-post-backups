@@ -23,7 +23,8 @@ Now let's see how to use Google Colab:
 3. On the top right-hand corner, there is an option to sign in. Click on that and login with your Google Account, then you'll see a floating window like this: 
 
 
-![Google Colab - Machine Learning - Learnml](Uploading...)
+
+![google colab  - Machine Learning - learnml](https://cdn.hashnode.com/res/hashnode/image/upload/v1647844541854/Kk6yhfi1c.png)
 
 
 For a first-time user, There is one pre-created notebook called "Welcome to Collaboratory". Now for your use, we will create a new Notebook, so click on **New notebook**.
@@ -63,6 +64,16 @@ To change your runtime to runtime with GPU:
 3. At the bottom, you'll see **Change Runtime Type**, click on that. 
 4. In the dropdown menu below Hardware Accelerator, Choose GPU or TPU as you need. 
 5. Click **Save**
+
+
+Selection of runtime from the menu options, 
+
+![runtime GPU/TPU selection](https://cdn.hashnode.com/res/hashnode/image/upload/v1647844642529/Wn__ixYtZ.png)
+
+Selection of the TPU/GPU runtime, 
+
+
+![TPU GPU selection](https://cdn.hashnode.com/res/hashnode/image/upload/v1647844855235/j_Y3mmkVb.png)
 
 In this way you can do python programming, running python ML Models, and almost all heavy Python-related tasks on Google Colab. 
 
