@@ -5,6 +5,11 @@
 In this article are going to see about what is a histogram graph and different interpretations of the histogram graphs. Histograms group the data in bins and are the fastest way to get an idea about the distribution of each attribute in the dataset. It looks very much like a bar chart, but there are important differences between them.
 
 
+### Colab Notebook
+
+All the code executed in this article was available in this [notebook](https://colab.research.google.com/drive/1n4sBjh3MVEGXjhgJgwkMN5UauokiX3GU?usp=sharing). Please take a copy and try executing it for happy learning. 
+
+
 ### Histogram
 
 A Histogram is a variation of a bar chart in which data values are grouped together and put into different classes. This grouping enables you to see how frequently data in each class occurs in the dataset. 
