@@ -6,6 +6,10 @@ To represent a dataset as a 1-number summary, we use the central tendency measur
 In this article, we are going to see the different types of Mean and their functionalities. 
 It's one of the most important concepts of statistics, a crucial subject to learn machine learning. 
 
+### Colab Notebook
+
+All the code executed in this article can be found in this [notebook](https://colab.research.google.com/drive/1a5as7bJ7-sKKsjakRFBR49NYf0usC6x6?usp=sharing). Please take a copy and try executing it to have happy learning. 
+
 ### Arithmetic Mean
 
 #### **Logic**
