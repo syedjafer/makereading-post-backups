@@ -4,6 +4,10 @@
 
 [K-Nearest Neighbour](https://blog.learnml.xyz/knn-k-nearest-neighbour-algorithm) is one of the simplest Machine Learning algorithms based on the Supervised Learning technique. It assumes the similarity between the new case/data and available cases and puts the new case into the category that is most similar to the available categories. It stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a good suite category by using the kNN algorithm. In this article, we will see how to select the K value in the kNN algorithm. 
 
+### Colab Notebook
+
+All the code executed in this article is available in this [notebook](https://colab.research.google.com/drive/1YqIlIiKpsLW48XeV62rMYS-9iwFV-6do?usp=sharing). Please take a copy and try executing those for practical learning. Happy Learning !!!
+
 ### Model Complexity
 
 kNN is a machine learning algorithm that is used for both classifications ( using kNearestClassifier ) and Regression ( using kNearestRegressor ) problems. In the kNN algorithm, k is the **hyperparameter**. Choosing the right value of k matters. A machine learning model is said to have **high model complexity** if the built model is having **low bias and high variance. ** We know that, 
