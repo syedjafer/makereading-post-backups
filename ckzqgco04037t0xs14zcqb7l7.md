@@ -1,4 +1,4 @@
-## Project - Predicting Salary with Simple Linear Regression
+## Project 1 - Predicting Salary with Simple Linear Regression
 
 ### Prerequisite
 1. Linear Regression from Scratch with Gradient Descent [Click Here](https://learnml.hashnode.dev/linear-regression-with-gradient-descent-scratch)
