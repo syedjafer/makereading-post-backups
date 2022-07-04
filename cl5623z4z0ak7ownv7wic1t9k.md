@@ -1,4 +1,4 @@
-## Project - 4 IMDB Sentiment Classification for 50K Reviews
+## Project 4 - IMDB Sentiment Classification for 50K Reviews
 
 ### Resources 
 1. Notebook - https://www.kaggle.com/syedjaferk/imdb-sentiment-classification-using-naive-bayes
