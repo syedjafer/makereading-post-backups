@@ -10,7 +10,7 @@
 The US Adult Census dataset is a repository of 48,842 entries extracted from the 1994 US 
 Census database. In this article we will explore the data at face value in order to understand the trends and representations of certain demographics in the corpus. 
 
-Then we will find the relationship between each column with the target value, and we will define the model to predict whether an individual made more or less than 50K in 1995. 
+Then we will find the relationship between each column with the target value, and we will define the model to predict whether an individual made more or less than 50K in 1994. 
 
 Then we will compare the models which better suits the dataset. 
 
