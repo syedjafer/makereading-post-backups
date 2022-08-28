@@ -17,7 +17,7 @@ We will see the implementation of sorting in ascending order.
 Consider the array : 29,10,14,37,14
 
 
-![selection sort array](https://cdn.hashnode.com/res/hashnode/image/upload/v1661685034486/r3kJeMXbn.png align="left")
+![selection sort array](https://cdn.hashnode.com/res/hashnode/image/upload/v1661685034486/r3kJeMXbn.png align="center")
 
 #### First Iteration
  
