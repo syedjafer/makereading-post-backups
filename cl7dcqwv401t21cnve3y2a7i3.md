@@ -153,6 +153,10 @@ Since the selection sort does a lot of comparisons, but relatively few copies, t
 1. Sort Colors - https://leetcode.com/problems/sort-colors/
 2. Hackerearth - https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/algorithm/old-keypad-in-a-foreign-land-24/
 
+### Slides
+
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/pFD3J42IFTNZwc?hostedIn=slideshare&page=upload" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="width: 50vw; height: 400px"></iframe>
+
 
 
 
