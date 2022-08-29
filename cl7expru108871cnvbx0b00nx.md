@@ -63,9 +63,11 @@ We can’t comment on the performance because it works based on the computation 
 
 
 I hope this clarifies the differences between these two functionalities.
-References: 
-MDN forEach - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-MDN map - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+### References: 
+- MDN forEach - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+- MDN map - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 
 
