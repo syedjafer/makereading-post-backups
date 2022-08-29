@@ -32,7 +32,7 @@ Now we saw the working of these features. Now we will see how they are different
 
 Below differences are already mentioned in the above codepens. Give it a shot . 
 
-#### 1. The returning value: 
+#### 1. The returning value
 The first difference between map() and forEach() is the returning value. The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
 
 #### 2. Chaining
