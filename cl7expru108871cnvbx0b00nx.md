@@ -39,13 +39,13 @@ The first difference between map() and forEach() is the returning value. The for
 The second difference between these array methods is the fact that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing a map() method on an array.
 That's something you can't do with forEach() because, as you might guess, it returns undefined.
 
-#### 3. Mutability: 
+#### 3. Mutability
 In both the features, we can perform the mutability. But from the development perspective we should only use the mutability using forEach (it’s designed for that. ). If we are using mutability in map, it would be removed in code review. The map() method returns an entirely new array with transformed elements and the same amount of data. In the case of forEach(), even if it returns undefined, it will mutate the original array with the callback.
 
 Therefore, we see clearly that map() relies on immutability and forEach() is a mutator method.
 
 
-#### 4. Performance: 
+#### 4. Performance
 We can’t comment on the performance because it works based on the computation speed of our machine. But many are claiming that map is faster. 
 
 
