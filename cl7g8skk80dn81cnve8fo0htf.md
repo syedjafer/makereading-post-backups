@@ -54,12 +54,11 @@ var result = window.localStorage.getItem('commodity');
 console.log("Retrived data without jsonified, "+ result);
 ```
 
-Give a try in the below codepen.
-
-<iframe src="https://codepen.io/syedjafer/embed/preview/dymxdWG?default-tab=js,result&amp;theme-id=dark&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
+%[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
 
 
-- #### getItem(key): 
+
+- #### getItem(key)
 
 **Functionality:** This is how you get items from localStorage. If the given key is not present then it will return null.
 
@@ -73,10 +72,8 @@ window.localStorage.setItem("name", "goku");
 const name = window.localStorage.getItem("name");
 console.log("name from localstorage, "+name);
 ```
-Give a try in the below codepen.
 
-<iframe src="https://codepen.io/syedjafer/embed/preview/dymxdWG?default-tab=js,result&amp;theme-id=dark&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
-
+%[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
 
 - #### removeItem(key)
 **Functionality:** Remove an item by key from localStorage. If the given key is not present then it wont do anything. 
@@ -91,11 +88,9 @@ var result = window.localStorage.getItem('commodity');
 console.log("Data after removing the key "+ result);
 ```
 
-Give a try in the below codepen.
+%[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
 
-<iframe src="https://codepen.io/syedjafer/embed/preview/dymxdWG?default-tab=js,result&amp;theme-id=dark&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
-
-- #### clear(): 
+- #### clear()
 **Functionality:** Clears the entire localStorage
 **Examples:**
 - Simple clear of localStorage
@@ -105,9 +100,7 @@ window.localStorage.clear();
 console.log("length of local storage - after clear " + window.localStorage.length);
 ```
 
-Give a try in the below codepen.
-
-<iframe src="https://codepen.io/syedjafer/embed/preview/dymxdWG?default-tab=js,result&amp;theme-id=dark&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
+%[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
 
 - #### length: 
 **Functionality:** We can use this like the property access. It returns number of items stored. 
@@ -117,6 +110,10 @@ Give a try in the below codepen.
 //length
 console.log("length of local storage " + window.localStorage.length);
 ```
+%[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
+
+### Codepen Tryout
+
 Give a try in the below codepen.
 
 <iframe src="https://codepen.io/syedjafer/embed/preview/dymxdWG?default-tab=js,result&amp;theme-id=dark&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
@@ -141,30 +138,27 @@ if (typeof(Storage) !== "undefined") {
 
 ### Where the local storage is saved ?
 
-#### Windows: 
+#### Windows
 
-**Firefox: **C:\Users\<Windows login/user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<profile folder>\webappsstore.sqlite, %APPDATA%\Mozilla\Firefox\Profiles\<profile folder>\webappsstore.sqlite
+- **Firefox: **C:\Users\<Windows login/user name>\AppData\Roaming\Mozilla\Firefox\Profiles\<profile folder>\webappsstore.sqlite, %APPDATA%\Mozilla\Firefox\Profiles\<profile folder>\webappsstore.sqlite
 
-**Chrome: **%LocalAppData%\Google\Chrome\User Data\Default\Local Storage\
+- **Chrome: **%LocalAppData%\Google\Chrome\User Data\Default\Local Storage\
 
 #### Linux:
 
-**Firefox:** ~/.mozilla/firefox/<profile folder>/webappsstore.sqlite
-**Chrome:** ~/.config/google-chrome/Default/Local Storage/
+- **Firefox:** ~/.mozilla/firefox/<profile folder>/webappsstore.sqlite
+- **Chrome:** ~/.config/google-chrome/Default/Local Storage/
 
 #### Mac: 
 
-**Firefox:** ~/Library/Application Support/Firefox/Profiles/<profile folder>/webappsstore.sqlite, ~/Library/Mozilla/Firefox/Profiles/<profile folder>/webappsstore.sqlite
-**Chrome:** ~/Library/Application Support/Google/Chrome/<Profile>/Local Storage/, ~/Library/Application Support/Google/Chrome/Default/Local Storage/
+- **Firefox:** ~/Library/Application Support/Firefox/Profiles/<profile folder>/webappsstore.sqlite, ~/Library/Mozilla/Firefox/Profiles/<profile folder>/webappsstore.sqlite
+- **Chrome:** ~/Library/Application Support/Google/Chrome/<Profile>/Local Storage/, ~/Library/Application Support/Google/Chrome/Default/Local Storage/
 
-#### Simple Handson
+### Simple handson
 
-<iframe src="https://syedjafer.github.io/localStrorage/index.html" scrolling="no" allowfullscreen="true" width="850" height="480" frameborder="no"></iframe>
-
+<iframe src="https://syedjafer.github.io/localStrorage/index.html" scrolling="no" allowfullscreen="true" width="850" height="400" frameborder="no"></iframe>
 
 Source Code: [github](https://github.com/syedjafer/localStrorage)
-
-
 
 ### Limitations: 
 
