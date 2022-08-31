@@ -102,7 +102,7 @@ console.log("length of local storage - after clear " + window.localStorage.lengt
 
 %[https://gist.github.com/syedjafer/e0e2317b39a36413665e91aced35363b#file-localstorage-js]
 
-- #### length: 
+- #### length
 **Functionality:** We can use this like the property access. It returns number of items stored. 
 **Examples: **
 
@@ -144,12 +144,12 @@ if (typeof(Storage) !== "undefined") {
 
 - **Chrome: **%LocalAppData%\Google\Chrome\User Data\Default\Local Storage\
 
-#### Linux:
+#### Linux
 
 - **Firefox:** ~/.mozilla/firefox/<profile folder>/webappsstore.sqlite
 - **Chrome:** ~/.config/google-chrome/Default/Local Storage/
 
-#### Mac: 
+#### Mac
 
 - **Firefox:** ~/Library/Application Support/Firefox/Profiles/<profile folder>/webappsstore.sqlite, ~/Library/Mozilla/Firefox/Profiles/<profile folder>/webappsstore.sqlite
 - **Chrome:** ~/Library/Application Support/Google/Chrome/<Profile>/Local Storage/, ~/Library/Application Support/Google/Chrome/Default/Local Storage/
