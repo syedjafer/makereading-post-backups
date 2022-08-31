@@ -51,7 +51,7 @@ We can’t comment on the performance because it works based on the computation 
 
 <iframe src="https://codepen.io/syedjafer/embed/MWVNWBj?default-tab=js,result&amp;theme-id=light&amp;editable=true" scrolling="no" allowfullscreen="true" loading="lazy" width="850" height="480" frameborder="no"></iframe>
 
-![performance - map-vs-foreach](https://cdn.hashnode.com/res/hashnode/image/upload/v1661787416768/LIphqNoNR.png align="left")
+![performance - map-vs-foreach](https://cdn.hashnode.com/res/hashnode/image/upload/v1661787416768/LIphqNoNR.png align="center")
 
 
 
