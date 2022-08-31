@@ -145,6 +145,11 @@ It is a stable sorting algorithm, the elements with the same values appear in th
 Binary Insertion Sort has a quadratic time complexity just as Insertion Sort. Still, it is usually faster than Insertion Sort in practice, which is apparent when comparison takes significantly more time than swapping two elements.
 
 
+### Slides
+
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/1hKLcz9y8euI4t?hostedIn=slideshare&page=upload" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+
 
 
 
