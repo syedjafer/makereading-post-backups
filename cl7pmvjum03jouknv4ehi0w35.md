@@ -1,4 +1,4 @@
-## Code Smell 01 - Anemic Model / Data Clas
+## Code Smell 01 - Anemic Model / Data Class
 
 ### Introduction
 
