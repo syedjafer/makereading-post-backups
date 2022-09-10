@@ -1,4 +1,4 @@
-## Google Sheet - Leetcode problems with more sorting fields
+## Google Sheet - Leetcode problems with more filter fields
 
 
 While solving problems on LeetCode, most of you must have realized that LeetCode doesn't provide an option to sort the questions by likes or likes-dislikes ratio apart from the first 100 most liked questions. While searching in the discussion section, You will see that a lot of people have asked for similar stuff and somebody made a most liked questions list as well but it is rarely updated if at all.
