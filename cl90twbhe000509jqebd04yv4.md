@@ -1,1 +1,49 @@
-IyMgQ2FuIHdlIHB1c2ggYW4gZW1wdHkgY29tbWl0PwoKPGlmcmFtZSBzdHlsZT0iaGVpZ2h0OiA0MDBweDsgd2lkdGg6IDkwJSIgc3JjPSJodHRwczovL3d3dy55b3V0dWJlLmNvbS9lbWJlZC8wNkpERTN3dk1VYyIgdGl0bGU9IllvdVR1YmUgdmlkZW8gcGxheWVyIiBmcmFtZWJvcmRlcj0iMCIgYWxsb3c9ImFjY2VsZXJvbWV0ZXI7IGF1dG9wbGF5OyBjbGlwYm9hcmQtd3JpdGU7IGVuY3J5cHRlZC1tZWRpYTsgZ3lyb3Njb3BlOyBwaWN0dXJlLWluLXBpY3R1cmUiIGFsbG93ZnVsbHNjcmVlbj48L2lmcmFtZT4KCgoKKipHaXQgUmVwbzogKiogaHR0cHM6Ly9naXRodWIuY29tL3N5ZWRqYWZlci9lbXB0eV9jb21taXRfdHV0CgoKCiMjIyBJbnRyb2R1Y3Rpb24KCkR1cmluZyBvdXIgc29mdHdhcmUgZGV2ZWxvcG1lbnQsIHdlIGZvbGxvdyBjb250aW51b3VzIGludGVncmF0aW9ucyB0byBkZXBsb3kgb3VyIGNvZGUgdG8gdGhlIGRldi9RQS9wcm9kIGVudmlyb25tZW50LiBGb3IgY29udGludW91cyBpbnRlZ3JhdGlvbiwgd2UgYXJlIHVzaW5nIEF6dXJlL0FXUyBDSS9DRCBkZWxpdmVyeSBwaXBlbGluZXMgd2hpY2ggYWxsb3cgdXMgdG8gYnVpbGQsIHRlc3QgYW5kIGRlcGxveSBhcHBsaWNhdGlvbnMgb24gYSBzaW5nbGUgcHVzaCB0byBhIHNwZWNpZmljIGdpdCBicmFuY2guIEl0IGhlbHBzIHVzIHRvIHJlZHVjZSB0aGUgbWFudWFsIG92ZXJoZWFkIG9mIGRlcGxveWluZyBjb2RlIHRvIHRoZSBzZXJ2ZXIgYW5kIGhhbmRsZSBhbGwgdGhlIGFjdGlvbnMgYXV0b21hdGljYWxseS4KCiMjIyBQcm9ibGVtCgpXZSBtaWdodCBoYXZlIGZhY2VkIGEgcHJvYmxlbSwgd2hlcmUgd2UgbmVlZGVkIHRvIHJlLXJ1biBvdXIgZGVsaXZlcnkgcGlwZWxpbmUgb2YgYSBicmFuY2ggd2l0aG91dCBhZGRpbmcgYW55IGV4dHJhIHNwYWNlIG9yIGNoYW5naW5nIGFueSBmaWxlcyBpbiB0aGUgcmVwb3NpdG9yeS4KCiMjIyBTb2x1dGlvbgoKU28gSSBzZWFyY2hlZCBmb3IgdGhlIHNvbHV0aW9uIGZvciBhIHdoaWxlIGFuZCBJdCB0dXJucyBvdXQgdGhhdCBHaXQgaXMgYWxsb3dpbmcgdXMgdG8gcHVzaCBhbiBlbXB0eSBjb21taXQgd2l0aG91dCBhZGRpbmcgYW55IHN0YWdlZCBmaWxlcyB0byB0aGUgYnJhbmNoLCBieSB1c2luZyBvbmUgb3B0aW9uICoqLS1hbGxvdy1lbXB0eSoqIGR1cmluZyB0aGUgZ2l0IGNvbW1pdC4KCmBgYGJhc2gKZ2l0IGNvbW1pdCAtLWFsbG93LWVtcHR5IC1tICJlbXB0eSBjb21taXQiCmBgYAoKU28gd2Ugd2lsbCB0cnkgdG8gY3JlYXRlIGEgc2NlbmFyaW8gdG8gY2hlY2sgdGhpcyB3b3JraW5nLAoKMS5MZXQgdXMgY3JlYXRlIGEgbmV3IHJlcG9zaXRvcnksIAoKIVtpbWFnZS5wbmddKGh0dHBzOi8vY2RuLmhhc2hub2RlLmNvbS9yZXMvaGFzaG5vZGUvaW1hZ2UvdXBsb2FkL3YxNjY1Mjg3MTAzODAwL3gxSmJTYmprYy5wbmcgYWxpZ249ImxlZnQiKQoKCjIuQWZ0ZXIgdGhlIGZpcnN0IGNvbW1pdCwKCiFbaW1hZ2UucG5nXShodHRwczovL2Nkbi5oYXNobm9kZS5jb20vcmVzL2hhc2hub2RlL2ltYWdlL3VwbG9hZC92MTY2NTI4NzE4OTYzNC9kdkIyUVhnZ2wucG5nIGFsaWduPSJsZWZ0IikKCjMuRW1wdHkgY29tbWl0LCAKCiFbaW1hZ2UucG5nXShodHRwczovL2Nkbi5oYXNobm9kZS5jb20vcmVzL2hhc2hub2RlL2ltYWdlL3VwbG9hZC92MTY2NTI4NzYyMDk5NC82OHM0bDdBZHIucG5nIGFsaWduPSJsZWZ0IikKCjQuVmVyaWZ5aW5nIHRoZSBjb21taXQgZGV0YWlscyBpbiBnaXRodWIsIAoKIVtpbWFnZS5wbmddKGh0dHBzOi8vY2RuLmhhc2hub2RlLmNvbS9yZXMvaGFzaG5vZGUvaW1hZ2UvdXBsb2FkL3YxNjY1Mjg3MzE0MzEyL3lvUmwwQTBGTS5wbmcgYWxpZ249ImxlZnQiKQoKIyMjIENvbmNsdXNpb24KClRodXMsIGZyb20gbm93IG9uIHdlIG5lZWQgbm90IHRvIGNoYW5nZSBhbnkgZmlsZXMgdG8gcmUtdHJpZ2dlciB0aGUgQ0kvQ0QgUGlwbGVsaW5lcy4KCg==
+# Can we push an empty commit?
+
+<iframe style="height: 400px; width: 90%" src="https://www.youtube.com/embed/06JDE3wvMUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+**Git Repo: ** https://github.com/syedjafer/empty_commit_tut
+
+
+
+### Introduction
+
+During our software development, we follow continuous integrations to deploy our code to the dev/QA/prod environment. For continuous integration, we are using Azure/AWS CI/CD delivery pipelines which allow us to build, test and deploy applications on a single push to a specific git branch. It helps us to reduce the manual overhead of deploying code to the server and handle all the actions automatically.
+
+### Problem
+
+We might have faced a problem, where we needed to re-run our delivery pipeline of a branch without adding any extra space or changing any files in the repository.
+
+### Solution
+
+So I searched for the solution for a while and It turns out that Git is allowing us to push an empty commit without adding any staged files to the branch, by using one option **--allow-empty** during the git commit.
+
+```bash
+git commit --allow-empty -m "empty commit"
+```
+
+So we will try to create a scenario to check this working,
+
+1.Let us create a new repository, 
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1665287103800/x1JbSbjkc.png align="left")
+
+
+2.After the first commit,
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1665287189634/dvB2QXggl.png align="left")
+
+3.Empty commit, 
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1665287620994/68s4l7Adr.png align="left")
+
+4.Verifying the commit details in github, 
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1665287314312/yoRl0A0FM.png align="left")
+
+### Conclusion
+
+Thus, from now on we need not to change any files to re-trigger the CI/CD Piplelines.
+
