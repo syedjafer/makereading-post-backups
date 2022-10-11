@@ -1,1 +1,37 @@
-IyMgc2V0SW50ZXJ2YWwgaW4gSmF2YXNjcmlwdAoKIyMjIFdoYXQgaXMgamF2YXNjcmlwdCBzZXRJbnRlcnZhbCA/CgpUaGUgc2V0SW50ZXJ2YWwoKSBtZXRob2QgaW4gSmF2YXNjcmlwdCBpcyB1c2VkIHRvIHJlcGVhdCBhIHNwZWNpZmllZCBmdW5jdGlvbiBhdCBldmVyeSBnaXZlbiB0aW1lIGludGVydmFsLiBJdCBldmFsdWF0ZXMgYW4gZXhwcmVzc2lvbiBvciBjYWxscyBhIGZ1bmN0aW9uIGF0IGEgZ2l2ZW4gaW50ZXJ2YWwuIFRoaXMgbWV0aG9kIGNvbnRpbnVlcyBjYWxsaW5nIHRoZSBmdW5jdGlvbiB1bnRpbCB0aGUgd2luZG93IGlzIGNsb3NlZCBvciB0aGUgY2xlYXJJbnRlcnZhbCgpIG1ldGhvZCBpcyBjYWxsZWQuIAoKVGhlIHNldEludGVydmFsKCkgbWV0aG9kIGNhbGxzIGEgZnVuY3Rpb24gYXQgc3BlY2lmaWVkIGludGVydmFscyAobWlsbGlzZWNvbmRzKS4gVGhlIHNldEludGVydmFsKCkgbWV0aG9kIGNvbnRpbnVlcyBjYWxsaW5nIHRoZSBmdW5jdGlvbiB1bnRpbCBjbGVhckludGVydmFsKCkgaXMgY2FsbGVkLCBvciB0aGUgd2luZG93IGlzIGNsb3NlZC4gCgoKIyMjIFdoYXQgaXMgc2V0SW50ZXJ2YWwgZnVuY3Rpb24gPwoKVGhlIHNldEludGVydmFsKCkgZnVuY3Rpb24gaXMgY29tbW9ubHkgdXNlZCB0byBzZXQgYSBkZWxheSBmb3IgZnVuY3Rpb25zIHRoYXQgbmVlZCB0byBiZSBleGVjdXRlZCBhZ2FpbiBhbmQgYWdhaW4uIFlvdSBjYW4gY2FuY2VsIHRoZSBpbnRlcnZhbCB1c2luZyBjbGVhckludGVydmFsKCkuIElmIHlvdSB3aXNoIHRvIGhhdmUgeW91ciBmdW5jdGlvbiBjYWxsZWQgb25jZSBhZnRlciB0aGUgc3BlY2lmaWVkIGRlbGF5LCB1c2Ugc2V0VGltZW91dCgpLiAKCnNldFRpbWVvdXQgaXMgYSBjb21tb25seSB1c2VkIGZ1bmN0aW9uIGluIGphdmFzY3JpcHQuIEl0IHNldHMgYSB0aW1lciAoIGEgY291bnRkb3duIHNldCBpbiBtaWxsaXNlY29uZHMpIGZvciB0aGUgZXhlY3V0aW9uIG9mIGEgY2FsbGJhY2sgZnVuY3Rpb24sIGNhbGxpbmcgdGhlIGZ1bmN0aW9uIHVwb24gY29tcGxldGlvbiBvZiB0aGUgdGltZXIuIAoKYGBgamF2YXNjcmlwdApzZXRJbnRlcnZhbChmdW5jdGlvbiwgbWlsbGlzZWNvbmRzKTsKYGBgCkl0cyBwYXJhbWV0ZXJzIGFyZToKMS4gKipmdW5jdGlvbioqIC0gYSBmdW5jdGlvbiBjb250YWluaW5nIGEgYmxvY2sgb2YgY29kZS4KMi4gKiptaWxsaXNlY29uZHMqKiAtIHRoZSB0aW1lIGludGVydmFsIGJldHdlZW4gdGhlIGV4ZWN1dGlvbi4gKDEgc2Vjb25kID0gMTAwMCBtaWxsaXNlY29uZHMpCgojIyMgRXhhbXBsZTogRGlzcGxheSBhIHRleHQgb25jZSBldmVyeSAxIHNlY29uZAoKYGBgCmZ1bmN0aW9uIGdyZWV0KCkgewogIGNvbnNvbGUubG9nKCJIZWxsbyBNYWtlcmVhZGluZyIpOwp9CnNldEludGVydmFsKGdyZWV0LCAxMDAwKTsKCmBgYAoKCiFbaW1hZ2UucG5nXShodHRwczovL2Nkbi5oYXNobm9kZS5jb20vcmVzL2hhc2hub2RlL2ltYWdlL3VwbG9hZC92MTY2NTExMDc0NDA5NC9QVkhza2hIMGEucG5nIGFsaWduPSJsZWZ0IikKCkluIHRoZSBhYm92ZSBwcm9ncmFtLCB0aGUgc2V0SW50ZXJ2YWwoKSBtZXRob2QgY2FsbHMgdGhlIGdyZWV0KCkgZnVuY3Rpb24gZXZlcnkgMTAwMCBtaWxsaXNlY29uZHMgKDEgc2Vjb25kKS4gSGVuY2UgdGhlIHByb2dyYW0gZGlzcGxheXMgdGhlIHRleHQgIkhlbGxvIE1ha2VyZWFkaW5nIiBvbmNlIGV2ZXJ5IDEgMSBzZWNvbmQuIAoK
+# setInterval in Javascript
+
+### What is javascript setInterval ?
+
+The setInterval() method in Javascript is used to repeat a specified function at every given time interval. It evaluates an expression or calls a function at a given interval. This method continues calling the function until the window is closed or the clearInterval() method is called. 
+
+The setInterval() method calls a function at specified intervals (milliseconds). The setInterval() method continues calling the function until clearInterval() is called, or the window is closed. 
+
+
+### What is setInterval function ?
+
+The setInterval() function is commonly used to set a delay for functions that need to be executed again and again. You can cancel the interval using clearInterval(). If you wish to have your function called once after the specified delay, use setTimeout(). 
+
+setTimeout is a commonly used function in javascript. It sets a timer ( a countdown set in milliseconds) for the execution of a callback function, calling the function upon completion of the timer. 
+
+```javascript
+setInterval(function, milliseconds);
+```
+Its parameters are:
+1. **function** - a function containing a block of code.
+2. **milliseconds** - the time interval between the execution. (1 second = 1000 milliseconds)
+
+### Example: Display a text once every 1 second
+
+```
+function greet() {
+  console.log("Hello Makereading");
+}
+setInterval(greet, 1000);
+
+```
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1665110744094/PVHskhH0a.png align="left")
+
+In the above program, the setInterval() method calls the greet() function every 1000 milliseconds (1 second). Hence the program displays the text "Hello Makereading" once every 1 1 second. 
+
