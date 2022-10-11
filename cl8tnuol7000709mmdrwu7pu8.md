@@ -1,1 +1,38 @@
-IyMgQmFzaCBTY3JpcHQgdG8gY2F0ZWdvcml6ZSBmaWxlcyBpbnRvIGJhdGNoZXMKCjxpZnJhbWUgc3R5bGU9ImhlaWdodDogNDAwcHg7IHdpZHRoOiAxMDAlIiBzcmM9Imh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL2VtYmVkL08wdlJZZWxIa3Z3IiB0aXRsZT0iWW91VHViZSB2aWRlbyBwbGF5ZXIiIGZyYW1lYm9yZGVyPSIwIiBhbGxvdz0iYWNjZWxlcm9tZXRlcjsgYXV0b3BsYXk7IGNsaXBib2FyZC13cml0ZTsgZW5jcnlwdGVkLW1lZGlhOyBneXJvc2NvcGU7IHBpY3R1cmUtaW4tcGljdHVyZSIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPgoKQ29uc2lkZXIgd2UgYXJlIGhhdmluZyB0aGlzIHNldCBvZiBmaWxlcywgCgoKIVtpbWFnZS5wbmddKGh0dHBzOi8vY2RuLmhhc2hub2RlLmNvbS9yZXMvaGFzaG5vZGUvaW1hZ2UvdXBsb2FkL3YxNjY0NzAxOTQyMzAxL2NYOU5BWnk3Zy5wbmcgYWxpZ249ImxlZnQiKQoKYGBgYmFzaAoKIyEvYmluL3NoCmRlY2xhcmUgLUEgZGljdGlvbmFyeQpGSUxFUz1gbHMgKi54bWxgCmZvciBGSUxFIGluICR7RklMRVN9CmRvCiAgSUZTPSdfJyByZWFkIC1yIC1hIGFycmF5IDw8PCAiJEZJTEUiCiAgaWYgWyAhIC12IGRpY3Rpb25hcnlbJHthcnJheVsxXX0ke2FycmF5WzNdfV0gXTsKICB0aGVuCiAgICBkaWN0aW9uYXJ5WyR7YXJyYXlbMV19JHthcnJheVszXX1dPSRGSUxFCiAgZWxzZQogICAgZGljdGlvbmFyeVske2FycmF5WzFdfSR7YXJyYXlbM119XSs9IiwiJEZJTEUKICBmaQpkb25lCgppbmRleD0xCmZvciBrZXkgaW4gIiR7IWRpY3Rpb25hcnlbQF19IjsgZG8KICAgIGVjaG8gIkJhdGNoICRpbmRleCAtICR7ZGljdGlvbmFyeVska2V5XX0iCiAgICBpbmRleD0kKCgkaW5kZXggKyAxKSkKZG9uZQoKCmBgYAoKKipPdXRwdXQ6KioKCgohW2ltYWdlLnBuZ10oaHR0cHM6Ly9jZG4uaGFzaG5vZGUuY29tL3Jlcy9oYXNobm9kZS9pbWFnZS91cGxvYWQvdjE2NjQ3MDE5OTg1MzUvWFhBeXVHaFZNLnBuZyBhbGlnbj0ibGVmdCIpCg==
+# Bash Script to categorize files into batches
+
+<iframe style="height: 400px; width: 100%" src="https://www.youtube.com/embed/O0vRYelHkvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Consider we are having this set of files, 
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664701942301/cX9NAZy7g.png align="left")
+
+```bash
+
+#!/bin/sh
+declare -A dictionary
+FILES=`ls *.xml`
+for FILE in ${FILES}
+do
+  IFS='_' read -r -a array <<< "$FILE"
+  if [ ! -v dictionary[${array[1]}${array[3]}] ];
+  then
+    dictionary[${array[1]}${array[3]}]=$FILE
+  else
+    dictionary[${array[1]}${array[3]}]+=","$FILE
+  fi
+done
+
+index=1
+for key in "${!dictionary[@]}"; do
+    echo "Batch $index - ${dictionary[$key]}"
+    index=$(($index + 1))
+done
+
+
+```
+
+**Output:**
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664701998535/XXAyuGhVM.png align="left")
