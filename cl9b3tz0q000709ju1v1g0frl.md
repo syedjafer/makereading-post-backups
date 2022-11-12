@@ -1,4 +1,4 @@
-# KanchiLug Weekly Meet
+# KanchiLug Weekly Meet - 16 Oct 2022
 
 Hi everyone,
 This week in KanchiLUG we have scheduled an weekly discussion as online meeting on Sunday, Oct 16 4:00 PM – 5:00PM
