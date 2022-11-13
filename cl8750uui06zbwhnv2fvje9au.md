@@ -1,4 +1,4 @@
-## 1D1C - cksum
+# 1D1C - cksum
 
 **cksum** - checksum and count the bytes in a file.
 
