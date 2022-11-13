@@ -1,4 +1,4 @@
-## Need of Consistent Hashing
+# Need of Consistent Hashing
 
 ### Introduction
 
