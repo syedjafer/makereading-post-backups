@@ -1,4 +1,4 @@
-## Consistent Hashing
+# Consistent Hashing
 
 ### Prerequisite
 
