@@ -1,4 +1,4 @@
-## WeakMap & WeakSet in Javascript
+# WeakMap & WeakSet in Javascript
 
 ### Garbage Collection
 
