@@ -1,4 +1,4 @@
-## Write minimalistic  Javascript Code - Part I
+# Write minimalistic  Javascript Code - Part I
 
 ### Introduction
 
