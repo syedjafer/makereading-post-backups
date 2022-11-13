@@ -1,4 +1,4 @@
-## Pure function vs Impure function in JS
+# Pure function vs Impure function in JS
 
 ### Key rules of a function
 
