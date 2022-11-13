@@ -1,4 +1,4 @@
-## flat() & flatMap() in Javascript
+# flat() & flatMap() in Javascript
 
 ### flat()
 
