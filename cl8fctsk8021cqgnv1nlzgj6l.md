@@ -1,4 +1,4 @@
-## package.json and package-lock.json
+# package.json and package-lock.json
 
 ### Introduction
 If you work in web development, you likely use **NPM** (Node PM or New PM)  all the time. It is a free public software registry - the largest in the world - that is accessible at the type of ```npm install``` in your command prompt so long as you have node.js installed already. Whenever we try to create a new project we will see a ```package.json``` file will be created. Whenever we install any packages ```package-lock.json``` file and ```node_modules``` folder will be created. In this blog post, we will see on **SemVer**, the purpose of package.json and package-lock.json and the internal functioning of npm install. 
