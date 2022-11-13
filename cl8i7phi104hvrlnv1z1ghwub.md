@@ -1,4 +1,4 @@
-## Does the CORS Preflight check is enabled for every request?
+# Does the CORS Preflight check is enabled for every request?
 
 ### Github and Live Demo
 
