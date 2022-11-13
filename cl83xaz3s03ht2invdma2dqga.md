@@ -1,4 +1,4 @@
-## Object Immutability in Javascript
+# Object Immutability in Javascript
 
 ### Introduction
 When working with values and objects in jaavscript, you may sometimes need to restrict what can be done with them.  By doing so we can prevent to modify application-wide configuration objects, state objects, or global constants. 
