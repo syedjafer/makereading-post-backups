@@ -1,4 +1,4 @@
-## Lets design a custom context menu
+# Lets design a custom context menu
 
 ### Introduction
 A context menu is a pop-up menu that provides shortcuts for actions the software developer anticipates the user might want to take. User interaction with context menus depends upon the computing device, its operating system (OS) and it input mechanisms. If the user does not have a mouse, for example, he may access context menus by pressing a keyboard combination, pressing and holding a trackball, holding a tap on a touch screen or placing two fingers on a touch pad. Context menus can be closed by selecting an action or clicking outside the menu area in open space.
