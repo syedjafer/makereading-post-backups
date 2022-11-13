@@ -1,4 +1,4 @@
-## 1D1C - bunzip2
+# 1D1C - bunzip2
 
 **bunzip2** - a block-sorting file compressor
 
