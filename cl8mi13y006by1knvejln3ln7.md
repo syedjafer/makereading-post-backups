@@ -1,4 +1,4 @@
-## Cookies and Javascript
+# Cookies and Javascript
 
 ### Introduction
 
