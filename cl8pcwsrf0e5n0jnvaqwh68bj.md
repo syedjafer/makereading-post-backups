@@ -1,4 +1,4 @@
-## Can we store cookies in REST API?
+# Can we store cookies in REST API?
 
 
 A RESTful API service may send cookies just like a regular web service. Cookies don't always violate the REST pattern. For example, the server might want to have its client remember a certain state so that it can provide this state when requesting another resource at a later point.
