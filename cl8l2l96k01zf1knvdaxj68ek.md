@@ -1,4 +1,4 @@
-## What is the Purpose of the Preflight request?
+# What is the Purpose of the Preflight request?
 
 ### Introduction
 
