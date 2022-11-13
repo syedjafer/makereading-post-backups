@@ -1,4 +1,4 @@
-## Just - A Simple Command Runner
+# Just - A Simple Command Runner
 
 ### Introduction
 
