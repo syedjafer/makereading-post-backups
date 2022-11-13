@@ -1,4 +1,4 @@
-## Destructuring Assignment
+# Destructuring Assignment
 
 ### Introduction
 
