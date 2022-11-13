@@ -1,4 +1,4 @@
-## Meta Transitions PyTorch to The Linux Foundation
+# Meta Transitions PyTorch to The Linux Foundation
 
 Meta is shifting the management of [PyTorch](https://github.com/pytorch/pytorch), a deep learning framework developed by Meta subsidiary Facebook, to the newly formed PyTorch Foundation, which in turn will be under the oversight of [The Linux Foundation](https://linuxfoundation.org/).
 
