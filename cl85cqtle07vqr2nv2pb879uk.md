@@ -1,4 +1,4 @@
-## How to handle a big request to avoid user holding time ?
+# How to handle a big request to avoid user holding time ?
 
 ### Introduction
 In a normal request-response cycle, server will be getting the request from client, process the request and sends the response back to the client (browser). During this cycle, browser won't allow the user to interact with the application (since, the web app would be having some kind of loader to block the user until the request is completed.). In most of the cases, the process time would be in hundreds of milliseconds, so the user wont feel the pain. 
