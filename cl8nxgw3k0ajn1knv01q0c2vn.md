@@ -1,4 +1,4 @@
-## Why is not possible to cancel an HTTP request?
+# Why is not possible to cancel an HTTP request?
 
 ### Introduction
 
