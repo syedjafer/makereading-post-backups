@@ -1,4 +1,4 @@
-## 1D1C - HASH
+# 1d1c - Hash
 
 **hash** - built-in command of bash which is used to maintain a hash table of recently executed programs
 
