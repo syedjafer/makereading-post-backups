@@ -1,4 +1,4 @@
-## 1D1C - HOST
+# 1d1c - Host
 
 **host** - DNS lookup utility used for performing DNS lookups. It is normally used to convert names to IP addresses and vice versa
 
