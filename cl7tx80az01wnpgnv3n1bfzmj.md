@@ -1,4 +1,4 @@
-## Skeleton Screen Loader
+# Project: Skeleton Screen Loader
 
 ### Introduction
 
