@@ -1,4 +1,4 @@
-## Server Sent Events
+# Server Sent Events
 
 ### Introduction
 
