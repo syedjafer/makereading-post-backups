@@ -1,4 +1,4 @@
-## What is Promise in Javascript?
+# What is Promise in Javascript?
 
 Promises are used to handle asynchronous operations in javascript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callbacks which will lead to unmanageable code. 
 
