@@ -1,4 +1,4 @@
-## console.log alternatives for frontend dev
+# console.log alternatives for frontend dev
 
 ### Introduction
 
