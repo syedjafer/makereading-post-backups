@@ -1,4 +1,4 @@
-## Analysis Report - Predicting if income exceeds 50K per year based on US Census Data with Simple Classification Techniques
+# Analysis Report - Predicting if income exceeds 50K per year based on US Census Data with Simple Classification Techniques
 
 ### Datasource
 
