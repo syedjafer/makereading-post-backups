@@ -1,4 +1,4 @@
-## Type any in Typescript
+# Type any in Typescript
 
 ### Introduction
 
