@@ -1,4 +1,4 @@
-## The Browser's Session Storage
+# The Browser's Session Storage
 
 ### Introduction
 
