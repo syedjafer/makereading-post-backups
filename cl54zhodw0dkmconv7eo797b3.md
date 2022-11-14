@@ -1,4 +1,4 @@
-## Project 3 - MNIST Handwritten Digit Recognition
+# Project 3 - MNIST Handwritten Digit Recognition
 
 ### Introduction
 
