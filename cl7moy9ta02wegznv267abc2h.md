@@ -1,4 +1,4 @@
-## Rainyday.js - Raindrops effect with Js & Canvas
+# Rainyday.js - Raindrops effect with Js & Canvas
 
 Today, i came across an awesome animation js library which gives rain drops effects using js. So i wanted to share this with you. 
 
