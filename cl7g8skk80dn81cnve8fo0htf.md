@@ -1,4 +1,4 @@
-## The browser's localStorage
+# The browser's localStorage
 
 ### Introduction
 
