@@ -1,4 +1,4 @@
-## The Classical Comparison - Map vs forEach
+# The Classical Comparison - Map vs forEach
 
 ### Introduction
 
