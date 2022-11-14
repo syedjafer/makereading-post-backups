@@ -1,4 +1,4 @@
-## Project 5 - Visualization: Covid Vaccination India
+# Project - Visualization: Covid Vaccination India
 
 ### Resources: 
 Github Repository: https://github.com/syedjafer/ml_projects_learning/blob/main/covid-vaccination-india-choropleth
