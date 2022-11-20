@@ -522,7 +522,7 @@ print(set_a.issuperset(set_b), set_b.issubset(set_a))
 
 ### Exercise
 
-**1: **Add a list of elements to a set, **clue: ** Use a constructor. <be>
+**1: **Add a list of elements to a set, **clue: ** Use a constructor. <br>
 **2: **Return a new set of identical items from two sets, **clue: ** Use intersection. <br>
 **3: **Get Only unique items from two sets, **clue: ** Use union. <br>
 **4: **Update the first set with items that don’t exist in the second set, **clue: ** difference; in place <br>
