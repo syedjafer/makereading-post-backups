@@ -4,6 +4,9 @@
 **Series Link**: https://makereading.com/series/python <br>
 **Challenges: ** https://www.hackerrank.com/contests/makereading/challenges
 
+### Youtube
+<iframe width="760" height="415" src="https://www.youtube.com/embed/hCR2giEgRSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### What is a set?
 
 A set is a collection that is `unordered`, `mutable with immutable data types`, and `unindexed`.
