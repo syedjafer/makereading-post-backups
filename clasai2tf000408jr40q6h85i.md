@@ -2,7 +2,7 @@
 
 ### Important Links
 
-**Series Link : **https://makereading.com/series/python
+**Series Link : **https://makereading.com/series/python <br>
 **Challenges : **https://www.hackerrank.com/contests/makereading/challenges
 
 ### What is a List ?
