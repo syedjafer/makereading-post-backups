@@ -43,7 +43,6 @@ print(type(data))
 
 ![python-set-data-type](https://cdn.hashnode.com/res/hashnode/image/upload/v1668842333432/jzDtc1NEk.png align="left")
 
-
 But If we are going to declare an empty set, probably we should not use curly bracket, 
 
 ```python
@@ -386,7 +385,7 @@ Using the python sets, we can achieve the above functionalities,
 
 Union of two sets will return all the items present in both sets (all items will be present only once). This can be done with either the `|` operator or the `union()` method.
 
-> `union()` will return a new set. It's not **inplace** change. 
+> 📝 `union()` will return a new set. It's not **inplace** change. 
 
 ```python
 set_a = {"apple", "banana", "orange"}
