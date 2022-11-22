@@ -511,7 +511,8 @@ print('Copied List:', fruits_fav)
 3: Add a new item to the list after a specified item. **clue: ** use insert<br>
 4: Extend the nested list by adding the sublist. **clue: ** use extend<br>
 5: Replace the list’s item with a new value if found. **clue: ** use remove, replace <br>
-6: Remove all occurrences of a specific item from a list. **clue** use removeAll
+6: Remove all occurrences of a specific item from a list. **clue** use removeAll<br>
+7: Reverse a list. **clue** use reverse() or slicing method
 
 
 ### Challenges
