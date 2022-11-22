@@ -1,15 +1,15 @@
 # Learn Python With Us - Lists
 
-### Important Links
+### ❗ Important Links
 
 **Series Link : **https://makereading.com/series/python <br>
 **Challenges : **https://www.hackerrank.com/contests/makereading/challenges
 
-### What is a List ?
+### What is a List?
 
 A simple data structure in Python that is a `mutable`, or `changeable`, `ordered` sequence of elements.
 
-### Properties of list 
+### Properties of the list 
 
 1. Lists are ordered, Which means they will **maintain the order of insertion.** 
 2. Lists can contain **any arbitrary objects** (eg: list, dictionary, set, tuple, string, numbers, None).
@@ -20,11 +20,11 @@ A simple data structure in Python that is a `mutable`, or `changeable`, `ordered
 
 ### How the list is built internally?
 
-Python lists are internally built on top of Arrays using C. Specifically, they are dynamic arrays with exponential over-allocation. Python’s lists are really variable-length arrays. The implementation uses a contiguous array of references to other objects and keeps a pointer to this array and the array’s length in a list head structure. 
+Python lists are internally built on top of Arrays using C. Specifically, they are **dynamic arrays** with exponential over-allocation. Python’s lists are really variable-length arrays. The implementation uses a contiguous array of references to other objects and keeps a pointer to this array and the array’s length in a list head structure. 
 
 When items are appended or inserted, the array of references is resized. Some cleverness is applied to repeatedly improve appending items' performance; when the array must be grown, some extra space is allocated so the next few times don’t require an actual resize.
 
-> To know more about how the memory allocation happens in the dynamic array for python list, please check out this http://www.laurentluce.com/posts/python-list-implementation/
+> 💡 To know more about how the memory allocation happens in the dynamic array for python list, please check out this http://www.laurentluce.com/posts/python-list-implementation/
 
 ### Declaration
 
@@ -34,7 +34,7 @@ A list data structure can be defined in two different methods,
 
 #### 1. Using square brackets
 
-You can declare the list like below,  
+You can declare the list below,  
 
 ```python
 data = ['d1', 'd2', 'd3']
@@ -45,7 +45,7 @@ print(data)
 
 #### 2. Using list() constructor
 
-Using list() constructor, we can convert a set, tuple, dictionary, list to a list.
+Using the list() constructor, we can convert a set, tuple, dictionary, or list to a list.
 
 **Set to list:**
 
@@ -59,10 +59,10 @@ print(data, type(data))
 
 **Dictionary to list**
 
-While converting Dictionary to list, the list value comprises only the key values.
+While converting Dictionary to a list, the list value comprises only the key values.
 
 ```python
-dict_data = {"name": "makereading", "type":"blog"}
+dict_data = {"name": "makereading", "type": "blog"}
 print("dict_data type", type(dict_data))
 data = list(dict_data)
 print(data, type(data))
@@ -95,7 +95,7 @@ print(data)
 
 As you see in the above list output, we can see that the list can contain all kind of datatypes. (i.e) number, string, boolean, list, dictionary, tuple, set. 
 
-### Built-in Functions with list
+### Built-in Functions with a list
 
 #### Length - len()
 To find the length of the list, 
@@ -109,7 +109,7 @@ print("length of data list ,", len(data))
 
 #### Type of data structure - type()
 
-To find the type of datastructure, 
+To find the type of data structure, 
 
 ```python
 data = [1, 2, 3, 4, 5, 'string']
@@ -131,7 +131,7 @@ print("Max - ", max(data), "Min - ", min(data))
 
 #### any()
 
-If any of the values in the set is true (i.e,) **Non-Zero , Non-Empty String, False** values then it will return True, else False. 
+If any of the values in the set is true (i.e,) **Non-Zero, Non-Empty String, False** values then it will return True, else False. 
 
 ```python
 data = [0, 10, 1, 89, 10]
@@ -142,7 +142,7 @@ print(any(data))
 
 #### all()
 
-The all() function returns True if all items in an iterable are true, otherwise it returns False. If the iterable object is empty, the all() function also returns True.
+The all() function returns True if all items in an iterable are true, otherwise, it returns False. If the iterable object is empty, the all() function also returns True.
 
 ```python
 data = [0, 10, 1, 89, 10]
@@ -159,7 +159,7 @@ print(all(data)) # Since it has all true values, it will return True
 
 List items are `indexed` and you can access them by referring to the `index number`. Python supports positive `zero-based indexing` and `negative indexing`  that starts from `-1.` Negative indexing in Python means the indexing starts from the end of the iterable. The last element is at index -1, the second last at -2, and so on. 
 
-consider the list, `arr = ['a', 'b', 'c', 'd', 'e', 'f']`, which is having 6 elements. From the below image you can see the values of the positive indexing and negative indexing. 
+consider the list, `arr = ['a', 'b', 'c', 'd', 'e', 'f']`, which is having 6 elements. From the below image, you can see the values of the positive indexing and negative indexing. 
 
 ![positive indexing](https://cdn.hashnode.com/res/hashnode/image/upload/v1669043290827/z8QMW2-_e.png align="left")
 
@@ -191,11 +191,11 @@ When specifying a range, the return value will be a new list with the specified 
 
 > list[start : stop : step]
 
-The format for list slicing is `[start:stop:step]`.
+The format for list slicing is `[start: stop: step]`.
 
 - **start** is the index of the list where slicing starts. (starting position is included)
 - **stop** is the index of the list where slicing ends. (stop position is excluded)
-- **step** allows you to select nth item within the range start to stop (**default** value is **1**)
+- **step** allows you to select an nth item within the range start to stop (**default** value is **1**)
 
 > 🖊️ If the **stop** value is greater than the list of the array, it won't throw an error. It will just consider till the end of the array. 
 
@@ -212,7 +212,7 @@ print(fruits[2:5])
 
 ![python slicing explanation](https://cdn.hashnode.com/res/hashnode/image/upload/v1669045555362/kgX2TJlsr.png align="left")
 
-**2. ** If you aren't specifying the `start` value it will take index 0 as the start value. The same thing to end, if you aren't specifying the end value it will take `len(arr)`.
+**2. ** If you aren't specifying the `start` value it will take index 0 as the start value. The same thing to the end, if you aren't specifying the end value it will take `len(arr)`.
 
 ```python
 fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
@@ -224,9 +224,9 @@ print(fruits[1:])
 
 ![python slicing without start or end](https://cdn.hashnode.com/res/hashnode/image/upload/v1669111612911/CQ4nX1fF2.png align="left")
 
-**3. ** If you aren't specifying both the start and end, then for `start ` it's value will be `0` and for the `end` it's value will be `len of array. `
+**3. ** If you aren't specifying both the start and end, then for `start ` it's value will be `0` and for the `end`, its value will be `len of the array. `
 
-**4. ** Lets try with negative indexing, 
+**4. ** Let's try with negative indexing, 
 
 ```python
 fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]  
@@ -297,15 +297,15 @@ print(fruits)
 
 ![before insert operation](https://cdn.hashnode.com/res/hashnode/image/upload/v1669122188628/6TbG9u2vB.png align="left")
 
-All the elements after element are shifted to the right.
+All the elements after the element are shifted to the right.
 
 ![before insertion](https://cdn.hashnode.com/res/hashnode/image/upload/v1669122489573/jpkKK96fX.png align="left")
 
-After insertion of the element, 
+After the insertion of the element, 
 
 ![after insertion](https://cdn.hashnode.com/res/hashnode/image/upload/v1669122539692/5AP-E8y6r.png align="left")
 
-This `insert()` method will work with the negative indexing aswell. 
+This `insert()` method will work with the negative indexing as well. 
 
 ```python
 fruits = ['apple', 'papaya', 'banana', 'orange', 'pear', 'lemon']
@@ -318,7 +318,7 @@ print(fruits)
 
 #### 2. append()
 
-`append()` method will add an element at the end of the list. Since list is an mutable data structure, this append() method is an in place change. 
+`append()` method will add an element at the end of the list. Since the list is a mutable data structure, this append() method is an in-place change. 
 
 ```python
 fruits = ['apple', 'papaya', 'banana', 'orange', 'pear', 'lemon']
@@ -331,7 +331,7 @@ print(fruits)
 
 #### 3. extend()
 
-extend() method takes only a single argument. The single argument can be a set, list, tuples or a dictionary. It automatically converts into a list and adds to the list. extend() method will take only an iterable as a parameter. 
+extend() method takes only a single argument. The single argument can be a set, list, tuples, or dictionary. It automatically converts into a list and adds to the list. extend() method will take only an iterable as a parameter. 
 
 **With Sets**
 
@@ -347,7 +347,7 @@ print(data)
 
 ```python
 data = [1, 2, 3, 4, 5]
-data.extend({"name":"makereading", "blog":"educational"})
+data.extend({"name": "makereading", "blog": "educational"})
 print(data)
 ```
 
@@ -363,7 +363,7 @@ print(data)
 
 ![extend - string to list](https://cdn.hashnode.com/res/hashnode/image/upload/v1669123644532/uH6CUpwhC.png align="left")
 
-### Method to remove values from list
+### Method to remove values from a list
 
 We have many methods to delete, remove the items from the list, 
 
@@ -374,7 +374,7 @@ We have many methods to delete, remove the items from the list,
 
 #### 1. remove()
 
-`remove()` method will take one parameter (element that to be removed). It will delete the **first occurence** of the element. 
+`remove()` method will take one parameter (the element that is to be removed). It will delete the **first occurrence** of the element. 
 
 ```python
 fruits = ["apple", "banana", "cherry"]  
@@ -504,13 +504,13 @@ print('Copied List:', fruits_fav)
 
 ![method copy python](https://cdn.hashnode.com/res/hashnode/image/upload/v1669125452173/VtPGuVvxA.png align="left")
 
-### Excersice
+### Exercise
 
 1: Reverse a list in Python. **clue :** use slicing. <br>
 2: Remove empty strings from the list of strings. **clue :** use remove, del, pop <br>
-3: Add new item to list after a specified item. **clue: ** use insert<br>
-4: Extend nested list by adding the sublist. **clue: ** use extend<br>
-5: Replace list’s item with new value if found. **clue: ** use remove, replace <br>
+3: Add a new item to the list after a specified item. **clue: ** use insert<br>
+4: Extend the nested list by adding the sublist. **clue: ** use extend<br>
+5: Replace the list’s item with a new value if found. **clue: ** use remove, replace <br>
 6: Remove all occurrences of a specific item from a list. **clue** use removeAll
 
 
