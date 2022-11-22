@@ -1,4 +1,4 @@
-## Set cookie value from Server Side
+# Set cookie value from Server Side
 
 ### Introduction: 
 In the previous post, we saw how to set a cookie using javascript. In the current post, we will see how we can set cookies from the server side. 
