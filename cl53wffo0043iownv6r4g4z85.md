@@ -1,4 +1,4 @@
-## Project 2 - Serial Activity
+# Project 2 - Serial Activity
 
 During our college times, we had a crash course on Machine Learning. Our coordinators has arranged an ML Engineer to take class for 3 days. During those time, we didn't actually got what he explained apart from linear regression (y = mx + c) 🤣
 
