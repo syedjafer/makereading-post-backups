@@ -5,6 +5,10 @@
 **Series Link : **https://makereading.com/series/python <br>
 **Challenges : **https://www.hackerrank.com/contests/makereading/challenges
 
+### Youtube
+
+<iframe width="720" height="420" src="https://www.youtube.com/embed/Nr3ZJSob-2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### What is a List?
 
 A simple data structure in Python that is a `mutable`, or `changeable`, `ordered` sequence of elements.
