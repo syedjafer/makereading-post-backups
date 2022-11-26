@@ -5,6 +5,9 @@
 **Series Link: ** https://makereading.com/series/python <br>
 **Challenges : ** https://www.hackerrank.com/contests/makereading/challenges
 
+### Youtube
+
+<iframe src="https://www.youtube.com/embed/WGFkXVia9Cw?vq=hd1080&modestbranding=1&rel=0&color=white" width="700" height="400" title="[makereading] Python Tuple - Learn Python With Us" frameborder="0" allowfullscreen></iframe>
 
 ### What is a Tuple?
 
