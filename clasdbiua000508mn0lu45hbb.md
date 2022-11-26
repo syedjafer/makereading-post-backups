@@ -7,4 +7,5 @@ Python is dynamically-typed and garbage-collected. It supports multiple programm
 **Series Link: ** https://makereading.com/series/python
 
 1. **Python Lists : ** https://makereading.com/learn-python-with-us-lists
-2. **Python Sets: ** https://makereading.com/learn-python-with-us-sets
+2. **Python Sets : ** https://makereading.com/learn-python-with-us-sets
+3. **Python Tuple :** https://makereading.com/learn-python-with-us-python-tuple
