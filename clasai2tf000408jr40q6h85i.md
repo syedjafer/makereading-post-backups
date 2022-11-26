@@ -3,7 +3,7 @@
 ### ❗ Important Links
 
 **Series Link : **https://makereading.com/series/python <br>
-**Challenges : **https://www.hackerrank.com/contests/makereading/challenges
+**Challenges : **https://www.hackerrank.com/contests/makereading/challenges <br>
 **Google Classroom: ** https://classroom.google.com/c/NTA3NzI5NTUzMDQz?cjc=2qcqsu5
 
 ### Youtube
