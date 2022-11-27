@@ -1,4 +1,4 @@
-## August 28 2022 - Kanchilug meeting discussion
+# August 28 2022 - Kanchilug meeting discussion
 
 ### About KanchiLug 
 
