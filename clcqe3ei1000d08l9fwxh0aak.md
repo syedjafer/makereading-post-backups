@@ -2,13 +2,13 @@
 
 > Subscribe to this [newsletter](https://makereading.com/newsletter) to get emails on JOB notifications in india.
 
-Do you have a passion for **Python**? Are you a Python developer willing to change your job? India's 2nd largest software giant, Infosys is currently on a hiring spree and looking for senior Python developers in India.
+Do you have a passion for [**Python**](https://makereading.com/series/python)? Are you a [Python](https://makereading.com/series/python) developer willing to change your job? India's 2nd largest software giant, Infosys is currently on a hiring spree and looking for senior [Python](https://makereading.com/series/python) developers in India.
 
 **About Infosys:**
 
-Infosys is one of the leading IT giants in India. If you are interested in joining the tech firm here's your golden opportunity to grab. Currently, the firm is looking for senior python developers in India.
+Infosys is one of the leading IT giants in India. If you are interested in joining the tech firm here's your golden opportunity to grab. Currently, the firm is looking for senior [python](https://makereading.com/series/python) developers in India.
 
-**Role:** Senior Python Developer
+**Role:** Senior [Python](https://makereading.com/series/python) Developer
 
 **Location:** Bengaluru
 
