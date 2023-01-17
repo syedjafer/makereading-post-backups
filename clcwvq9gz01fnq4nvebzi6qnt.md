@@ -32,3 +32,5 @@ In this Git series, we will concentrate on 2 items,
     
 
 In conclusion, GitWorkflows are essential for managing and organizing codebase in a collaborative environment, they ensure that everyone is working in a consistent and organized manner, separate different stages of development allow for multiple people to work on different features or bug fixes simultaneously, and enables collaboration, communication, and the ability to rollback changes easily.
+
+> Book : [https://school.makereading.com/git/](https://school.makereading.com/git/)
